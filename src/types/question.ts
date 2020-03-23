@@ -1,5 +1,5 @@
 export interface Question {
-  questionNumber: number | null;
+  questionNumber: number;
   question: string;
   answers: string[];
   explanation?: string;

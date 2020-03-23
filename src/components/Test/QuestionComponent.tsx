@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./question.css";
+import { Redirect } from "react-router";
 
 interface QuestionProps {
   id: number;
@@ -22,12 +23,10 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
     handleNextQuestion(givenAnswer, id);
   };
 
+  if (!question) return <Redirect to="/" />;
+
   return (
     <div className="container">
-      <div className="item">
-        <h4>Question</h4>
-        <h2>{id}</h2>
-      </div>
       <form className="item" onSubmit={handleNext}>
         <h4>{question}</h4>
         <select onChange={handleChange} value={givenAnswer}>

@@ -8,20 +8,22 @@ interface TestProps {}
 
 type Props = TestProps & LinkStateProps & LinkDispatchProps;
 
-const Test: React.FC<Props> = () => {
-  // update the store with answer
+const Test: React.FC<Props> = props => {
+  const { question, answers, questionNumber } = props.currentQuestion;
   const handleNextQuestion = (answer: string, id: number) => {
     console.log("Heloooooo: answer", answer, id);
+    //logic for determining next question
+    //if conclusion, go to /answer
   };
 
   return (
     <div>
       <div>
         <QuestionComponent
-          key={1}
-          id={1}
-          question={"This is the first question"}
-          answers={["yes", "no"]}
+          key={questionNumber}
+          id={questionNumber}
+          question={question}
+          answers={answers}
           handleNextQuestion={handleNextQuestion}
         />
       </div>

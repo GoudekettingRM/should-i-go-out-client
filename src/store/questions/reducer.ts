@@ -9,7 +9,7 @@ interface QuestionStateType {
 
 const initialState: QuestionStateType = {
   all: [],
-  current: { questionNumber: null, question: "", answers: [] }
+  current: { questionNumber: 0, question: "", answers: [] }
 };
 
 export const questionReducer = (state = initialState, action: AppActions) => {
