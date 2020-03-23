@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 500px;
+  margin: 0 auto;
+}
+.item {
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+select {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-flow: row wrap;
+    width: auto;
+  }
+}
