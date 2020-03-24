@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { History } from "history";
-import "./question.css";
+import Button from "react-bootstrap/Button";
 
 interface QuestionProps {
   id: number;
@@ -30,9 +30,9 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
   }
 
   return (
-    <div className="container">
-      <form className="item" onSubmit={handleNext}>
-        <h4>{question}</h4>
+    <form onSubmit={handleNext}>
+      <h3>{question}</h3>
+      <div className="questionAnswers">
         {answers.map((answer, index) => (
           <div key={index}>
             <input
@@ -41,13 +41,13 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
               value={answer}
               onChange={handleChange}
             />
-            <label>{answer}</label>
+            <label className="answerLabel">{answer}</label>
           </div>
         ))}
+      </div>
 
-        <button type="submit">Volgende vraag</button>
-      </form>
-    </div>
+      <Button type="submit">Volgende vraag</Button>
+    </form>
   );
 };
 

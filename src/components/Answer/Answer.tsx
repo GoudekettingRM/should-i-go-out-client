@@ -4,6 +4,7 @@ import { AppState } from "../../store/rootReducer";
 import { RouteComponentProps } from "react-router-dom";
 import { Dispatch, bindActionCreators } from "redux";
 import { setCurrentQuestionActionCreator } from "../../store/questions/actions";
+import Button from "react-bootstrap/Button";
 
 interface AnswerProps extends RouteComponentProps {}
 
@@ -21,9 +22,9 @@ const Answer: React.FC<Props> = ({ answer, history, setCurrentQuestion }) => {
   }
 
   return (
-    <div>
-      <h1>{answer}</h1>
-      <button onClick={restartTest}>Check opnieuw</button>
+    <div className="pageContent">
+      <h3>{answer}</h3>
+      <Button onClick={restartTest}>Check opnieuw</Button>
     </div>
   );
 };

@@ -44,19 +44,16 @@ const Test: React.FC<Props> = props => {
     }
   };
 
-  console.log("'render' of test component");
   return (
-    <div>
-      <div>
-        <QuestionComponent
-          history={props.history}
-          key={questionNumber}
-          id={questionNumber}
-          question={question}
-          answers={answers}
-          handleNextQuestion={handleNextQuestion}
-        />
-      </div>
+    <div className="pageContent">
+      <QuestionComponent
+        history={props.history}
+        key={questionNumber}
+        id={questionNumber}
+        question={question}
+        answers={answers}
+        handleNextQuestion={handleNextQuestion}
+      />
     </div>
   );
 };
