@@ -5,10 +5,10 @@ import { Question } from "../../types/question";
 import { AppState } from "../../store/rootReducer";
 import { determineNextQuestion } from "../../helper-files/determineNextQuestion";
 import { bindActionCreators, Dispatch } from "redux";
-import { setCurrentQuestion } from "../../store/questions/actions";
+import { setCurrentQuestionActionCreator } from "../../store/questions/actions";
 import { History } from "history";
 import { generateError } from "../../helper-files/generateError";
-import { setAnswer } from "../../store/answer/actions";
+import { setAnswerActionCreator } from "../../store/answer/actions";
 import { determineConclusion } from "../../helper-files/determineConclusion";
 
 interface TestProps {
@@ -75,8 +75,11 @@ const mapStateToProps = (state: AppState) => ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  setCurrentQuestion: bindActionCreators(setCurrentQuestion, dispatch),
-  setAnswer: bindActionCreators(setAnswer, dispatch)
+  setCurrentQuestion: bindActionCreators(
+    setCurrentQuestionActionCreator,
+    dispatch
+  ),
+  setAnswer: bindActionCreators(setAnswerActionCreator, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Test);

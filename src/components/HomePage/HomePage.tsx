@@ -1,6 +1,6 @@
 import React from "react";
 import { RouteComponentProps } from "react-router-dom";
-import { setCurrentQuestion } from "../../store/questions/actions";
+import { setCurrentQuestionActionCreator } from "../../store/questions/actions";
 import { connect } from "react-redux";
 import { Dispatch, bindActionCreators } from "redux";
 
@@ -16,9 +16,9 @@ const HomePage: React.FC<Props> = props => {
 
   return (
     <div>
-      <h1>Welcome to Should-I-Go-Out?</h1>
+      <h1>Welkom bij Should-I-Go-Out?</h1>
       <button type="button" onClick={startTest}>
-        I want to go out, but should I?
+        Ik wil naar buiten gaan, maar is dat wel handig?
       </button>
     </div>
   );
@@ -29,7 +29,10 @@ interface LinkDispatchProps {
 }
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  setCurrentQuestion: bindActionCreators(setCurrentQuestion, dispatch)
+  setCurrentQuestion: bindActionCreators(
+    setCurrentQuestionActionCreator,
+    dispatch
+  )
 });
 
 export default connect(null, mapDispatchToProps)(HomePage);

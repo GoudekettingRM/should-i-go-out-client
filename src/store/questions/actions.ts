@@ -4,7 +4,9 @@ import { questions } from "./allTestQuestions";
 import { Question } from "../../types/question";
 import { generateError } from "../../helper-files/generateError";
 
-export const setCurrentQuestion = (questionNumber: number): AppActions => {
+export const setCurrentQuestionActionCreator = (
+  questionNumber: number
+): AppActions => {
   const currentQuestion: Question | undefined = questions.find(
     question => question.questionNumber === questionNumber
   );

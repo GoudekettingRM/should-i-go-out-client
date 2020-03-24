@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { History } from "history";
 import "./question.css";
-import { Redirect } from "react-router";
 
 interface QuestionProps {
   id: number;
@@ -25,8 +24,6 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
     handleNextQuestion(givenAnswer, id);
   };
 
-  // useEffect(() => handleNextQuestion(givenAnswer, id), [givenAnswer]);
-
   if (!question) {
     history.push("/");
     return <div>Terug naar home</div>;
@@ -48,7 +45,7 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
           </div>
         ))}
 
-        <button type="submit">Next Question</button>
+        <button type="submit">Volgende vraag</button>
       </form>
     </div>
   );

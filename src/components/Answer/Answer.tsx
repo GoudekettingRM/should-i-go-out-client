@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { AppState } from "../../store/rootReducer";
 import { RouteComponentProps } from "react-router-dom";
 import { Dispatch, bindActionCreators } from "redux";
-import { setCurrentQuestion } from "../../store/questions/actions";
+import { setCurrentQuestionActionCreator } from "../../store/questions/actions";
 
 interface AnswerProps extends RouteComponentProps {}
 
@@ -23,7 +23,7 @@ const Answer: React.FC<Props> = ({ answer, history, setCurrentQuestion }) => {
   return (
     <div>
       <h1>{answer}</h1>
-      <button onClick={restartTest}>Check opnieuw.</button>
+      <button onClick={restartTest}>Check opnieuw</button>
     </div>
   );
 };
@@ -40,7 +40,10 @@ const mapStateToProps = (state: AppState) => ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  setCurrentQuestion: bindActionCreators(setCurrentQuestion, dispatch)
+  setCurrentQuestion: bindActionCreators(
+    setCurrentQuestionActionCreator,
+    dispatch
+  )
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Answer);
