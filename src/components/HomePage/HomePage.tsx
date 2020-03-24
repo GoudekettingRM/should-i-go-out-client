@@ -16,7 +16,7 @@ const HomePage: React.FC<Props> = props => {
   };
 
   return (
-    <div>
+    <div className="introScreen">
       <h1>Welkom bij Should-I-Go-Out?</h1>
       <Button type="button" onClick={startTest}>
         Ik wil naar buiten gaan, maar is dat wel handig?
