@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { History } from "history";
 import "./question.css";
 import { Redirect } from "react-router";
 
@@ -7,13 +8,14 @@ interface QuestionProps {
   question: string;
   answers: string[];
   handleNextQuestion: (answer: string, id: number) => void;
+  history: History;
 }
 
 const QuestionComponent: React.FC<QuestionProps> = props => {
-  const { id, question, answers, handleNextQuestion } = props;
+  const { id, question, answers, handleNextQuestion, history } = props;
   const [givenAnswer, setGivenAnswer] = useState("");
 
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     setGivenAnswer(event.target.value);
   };
 
@@ -23,20 +25,29 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
     handleNextQuestion(givenAnswer, id);
   };
 
-  if (!question) return <Redirect to="/" />;
+  // useEffect(() => handleNextQuestion(givenAnswer, id), [givenAnswer]);
+
+  if (!question) {
+    history.push("/");
+    return <div>Terug naar home</div>;
+  }
 
   return (
     <div className="container">
       <form className="item" onSubmit={handleNext}>
         <h4>{question}</h4>
-        <select onChange={handleChange} value={givenAnswer}>
-          <option value="">Pick your answer</option>
-          {answers.map((answer, index) => (
-            <option key={index} value={answer}>
-              {answer}
-            </option>
-          ))}
-        </select>
+        {answers.map((answer, index) => (
+          <div key={index}>
+            <input
+              type="radio"
+              name="answer"
+              value={answer}
+              onChange={handleChange}
+            />
+            <label>{answer}</label>
+          </div>
+        ))}
+
         <button type="submit">Next Question</button>
       </form>
     </div>

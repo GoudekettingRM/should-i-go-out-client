@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import QuestionComponent from "./QuestionComponent";
 import { Question } from "../../types/question";
@@ -6,30 +6,47 @@ import { AppState } from "../../store/rootReducer";
 import { determineNextQuestion } from "../../helper-files/determineNextQuestion";
 import { bindActionCreators, Dispatch } from "redux";
 import { setCurrentQuestion } from "../../store/questions/actions";
+import { History } from "history";
+import { generateError } from "../../helper-files/generateError";
 
-interface TestProps {}
+interface TestProps {
+  history: History;
+}
 
 type Props = TestProps & LinkStateProps & LinkDispatchProps;
 
 const Test: React.FC<Props> = props => {
   const { question, answers, questionNumber } = props.currentQuestion;
-  const handleNextQuestion = (answer: string, id: number) => {
-    console.log("Hello: answer", answer, id);
+  const [answeredQuestions, setAnsweredQuestions] = useState<number[]>([]);
+
+  const handleNextQuestion = (answer: string, id: number): void => {
     const nextQuestionNumber: number = determineNextQuestion(answer, id);
-    console.log("Next question number:", nextQuestionNumber);
+
+    console.log("answeredQuestions.length", answeredQuestions.length);
+    console.log("nextQuestionNumber", nextQuestionNumber);
+
     if (nextQuestionNumber > 0) {
+      setAnsweredQuestions(prev => [...prev, id]);
       props.setCurrentQuestion(nextQuestionNumber);
-    } else if (!nextQuestionNumber) {
+    } else if (!nextQuestionNumber && answeredQuestions.length > 0) {
       console.log("Conclusion can be reached!");
+      props.history.push("/answer");
+    } else if (!answeredQuestions.length) {
+      return;
+    } else {
+      throw generateError(
+        "Something went wrong with determining the next question.",
+        500
+      );
     }
-    //logic for determining next question
-    //if conclusion, go to /answer
   };
 
+  console.log("'render' of test component");
   return (
     <div>
       <div>
         <QuestionComponent
+          history={props.history}
           key={questionNumber}
           id={questionNumber}
           question={question}
