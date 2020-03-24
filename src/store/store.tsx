@@ -1,10 +1,4 @@
-import {
-  createStore,
-  applyMiddleware,
-  compose,
-  Store,
-  StoreEnhancer
-} from "redux";
+import { createStore, applyMiddleware, compose, StoreEnhancer } from "redux";
 import { rootReducer, AppState } from "./rootReducer";
 import ReduxThunk, { ThunkMiddleware } from "redux-thunk";
 import { AppActions } from "./appActions";
