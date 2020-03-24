@@ -19,7 +19,7 @@ body {
   border-radius: 1rem;
 }
 .introScreen {
-  width: 500px;
+  width: 600px;
 }
 @media only screen and (max-width: 500px) {
   .pageContent,
