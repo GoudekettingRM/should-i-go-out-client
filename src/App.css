@@ -3,11 +3,11 @@ body {
   background: url("http://eindhovenhotspots.nl/wp-content/uploads/2016/08/Park-Eindhoven-Henri-Dunant.jpg")
     no-repeat center center fixed;
   background-size: cover;
-  height: 100vmin;
+  height: 100%;
   text-align: center;
 }
 .App {
-  height: 100vmin;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +27,13 @@ body {
     width: 90%;
   }
 }
+.questionAnswers {
+  margin-bottom: 2rem;
+  text-align: left;
+  transform: translateX(35%);
+  max-width: 60%;
+}
+
 h1 {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -39,13 +46,6 @@ h3 {
     1px 1px 0 #000;
   margin-bottom: 1rem;
 }
-.questionAnswers {
-  margin-bottom: 2rem;
-  text-align: left;
-  transform: translateX(35%);
-  max-width: 60%;
-}
-
 .answerLabel {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
