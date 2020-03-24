@@ -9,5 +9,6 @@ export const determineNextQuestion = (
   if (prevQuestionId === 4 && givenAnswer === "ja") return 5;
   if (prevQuestionId === 4 && givenAnswer === "nee") return 6;
   if (prevQuestionId === 6 && givenAnswer === "nee") return 7;
+  if (prevQuestionId === 8 && givenAnswer === "nee") return 9;
   return 0;
 };

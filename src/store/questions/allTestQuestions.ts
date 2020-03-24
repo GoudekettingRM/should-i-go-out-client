@@ -46,5 +46,10 @@ export const questions: Question[] = [
     answers: ["ja", "nee"],
     explanation:
       "De lijst van vitale beroepen kun je hier vinden: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/veelgestelde-vragen-over-coronavirus-en-kinderopvang/cruciale-beroepen"
+  },
+  {
+    questionNumber: 9,
+    question: "Is thuiswerken een mogelijkheid?",
+    answers: ["ja", "nee"]
   }
 ];

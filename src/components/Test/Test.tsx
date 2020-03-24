@@ -8,6 +8,8 @@ import { bindActionCreators, Dispatch } from "redux";
 import { setCurrentQuestion } from "../../store/questions/actions";
 import { History } from "history";
 import { generateError } from "../../helper-files/generateError";
+import { setAnswer } from "../../store/answer/actions";
+import { determineConclusion } from "../../helper-files/determineConclusion";
 
 interface TestProps {
   history: History;
@@ -30,6 +32,7 @@ const Test: React.FC<Props> = props => {
       props.setCurrentQuestion(nextQuestionNumber);
     } else if (!nextQuestionNumber && answeredQuestions.length > 0) {
       console.log("Conclusion can be reached!");
+      props.setAnswer(determineConclusion(answer, id));
       props.history.push("/answer");
     } else if (!answeredQuestions.length) {
       return;
@@ -64,14 +67,16 @@ interface LinkStateProps {
 
 interface LinkDispatchProps {
   setCurrentQuestion: (questionNumber: number) => void;
+  setAnswer: (answer: string) => void;
 }
 
 const mapStateToProps = (state: AppState) => ({
-  currentQuestion: state.questions.current
+  currentQuestion: state.currentQuestion
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  setCurrentQuestion: bindActionCreators(setCurrentQuestion, dispatch)
+  setCurrentQuestion: bindActionCreators(setCurrentQuestion, dispatch),
+  setAnswer: bindActionCreators(setAnswer, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Test);
