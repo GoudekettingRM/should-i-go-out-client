@@ -10,8 +10,6 @@ type Props = HomePageProps & LinkDispatchProps;
 
 const HomePage: React.FC<Props> = props => {
   const startTest = (): void => {
-    console.log("Starting test!");
-
     props.setCurrentQuestion(1);
     props.history.push("/test");
   };
@@ -20,7 +18,7 @@ const HomePage: React.FC<Props> = props => {
     <div>
       <h1>Welcome to Should-I-Go-Out?</h1>
       <button type="button" onClick={startTest}>
-        I want to go out, but should I? Again?
+        I want to go out, but should I?
       </button>
     </div>
   );
