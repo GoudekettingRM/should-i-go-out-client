@@ -5,7 +5,8 @@ export const determineConclusion = (
   finalQuestionId: number
 ): Answer => {
   if (
-    (finalQuestionId === 5 && finalQuestionAnswer === "nee") ||
+    (finalQuestionId === 5 &&
+      finalQuestionAnswer === "nee, ook met andere mensen") ||
     (finalQuestionId === 7 && finalQuestionAnswer === "ja") ||
     (finalQuestionId === 9 && finalQuestionAnswer === "ja")
   )
@@ -21,7 +22,11 @@ export const determineConclusion = (
   )
     return answers.goAlone;
 
-  if (finalQuestionId === 5 && finalQuestionAnswer === "ja")
+  if (
+    finalQuestionId === 5 &&
+    finalQuestionAnswer ===
+      "ja, alleen of alleen met mensen die bij je in huis wonen"
+  )
     return answers.avoidOthers;
 
   if (finalQuestionId === 6 && finalQuestionAnswer === "ja")

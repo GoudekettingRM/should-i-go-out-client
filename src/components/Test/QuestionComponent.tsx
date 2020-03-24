@@ -16,6 +16,7 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     setGivenAnswer(event.target.value);
+    console.log("event target value", event.target.value);
   };
 
   const handleNext = (event: React.FormEvent<HTMLFormElement>): void => {
