@@ -3,7 +3,7 @@ import "./App.css";
 import { Switch, Route } from "react-router";
 import HomePage from "./components/HomePage/HomePage";
 import Test from "./components/Test/Test";
-import Answer from "./components/Answer/Answer";
+import AnswerContainer from "./components/Answer/Answer";
 
 const App: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/test" exact component={Test} />
-        <Route path="/answer" exact component={Answer} />
+        <Route path="/answer" exact component={AnswerContainer} />
       </Switch>
     </div>
   );

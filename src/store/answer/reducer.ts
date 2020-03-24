@@ -1,7 +1,8 @@
 import { AppActions } from "../appActions";
 import { SET_ANSWER } from "./types";
+import { Answer } from "./allTestAnswers";
 
-const initialState: string = "";
+const initialState: Answer = { explanation: "", conclusion: "" };
 
 export const answerReducer = (state = initialState, action: AppActions) => {
   switch (action.type) {

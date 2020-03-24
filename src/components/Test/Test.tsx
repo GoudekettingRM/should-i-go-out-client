@@ -10,6 +10,7 @@ import { History } from "history";
 import { generateError } from "../../helper-files/generateError";
 import { setAnswerActionCreator } from "../../store/answer/actions";
 import { determineConclusion } from "../../helper-files/determineConclusion";
+import { Answer } from "../../store/answer/allTestAnswers";
 
 interface TestProps {
   history: History;
@@ -24,14 +25,10 @@ const Test: React.FC<Props> = props => {
   const handleNextQuestion = (answer: string, id: number): void => {
     const nextQuestionNumber: number = determineNextQuestion(answer, id);
 
-    console.log("answeredQuestions.length", answeredQuestions.length);
-    console.log("nextQuestionNumber", nextQuestionNumber);
-
     if (nextQuestionNumber > 0) {
       setAnsweredQuestions(prev => [...prev, id]);
       props.setCurrentQuestion(nextQuestionNumber);
     } else if (!nextQuestionNumber && answeredQuestions.length > 0) {
-      console.log("Conclusion can be reached!");
       props.setAnswer(determineConclusion(answer, id));
       props.history.push("/answer");
     } else if (!answeredQuestions.length) {
@@ -64,7 +61,7 @@ interface LinkStateProps {
 
 interface LinkDispatchProps {
   setCurrentQuestion: (questionNumber: number) => void;
-  setAnswer: (answer: string) => void;
+  setAnswer: (answer: Answer) => void;
 }
 
 const mapStateToProps = (state: AppState) => ({

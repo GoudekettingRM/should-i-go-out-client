@@ -5,32 +5,38 @@ import { RouteComponentProps } from "react-router-dom";
 import { Dispatch, bindActionCreators } from "redux";
 import { setCurrentQuestionActionCreator } from "../../store/questions/actions";
 import Button from "react-bootstrap/Button";
+import { Answer } from "../../store/answer/allTestAnswers";
 
 interface AnswerProps extends RouteComponentProps {}
 
 type Props = AnswerProps & LinkStateProps & LinkDispatchProps;
 
-const Answer: React.FC<Props> = ({ answer, history, setCurrentQuestion }) => {
+const AnswerContainer: React.FC<Props> = ({
+  answer,
+  history,
+  setCurrentQuestion
+}) => {
   const restartTest = (): void => {
     setCurrentQuestion(1);
     history.push("/test");
   };
 
-  if (!answer) {
+  if (!answer.conclusion) {
     history.push("/");
     return <div>Terug naar home...</div>;
   }
 
   return (
     <div className="pageContent">
-      <h3>{answer}</h3>
+      <h3>{answer.conclusion}</h3>
+      <p>{answer.explanation}</p>
       <Button onClick={restartTest}>Check opnieuw</Button>
     </div>
   );
 };
 
 interface LinkStateProps {
-  answer: string;
+  answer: Answer;
 }
 interface LinkDispatchProps {
   setCurrentQuestion: (questionNumber: number) => void;
@@ -47,4 +53,4 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   )
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Answer);
+export default connect(mapStateToProps, mapDispatchToProps)(AnswerContainer);
