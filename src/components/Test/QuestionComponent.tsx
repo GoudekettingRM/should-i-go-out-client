@@ -35,13 +35,16 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
       <div className="questionAnswers">
         {answers.map((answer, index) => (
           <div key={index}>
-            <input
-              type="radio"
-              name="answer"
-              value={answer}
-              onChange={handleChange}
-            />
-            <label className="answerLabel">{answer}</label>
+            <label className="answerLabel">
+              <input
+                className="radioButton"
+                type="radio"
+                name="answer"
+                value={answer}
+                onChange={handleChange}
+              />
+              {answer}
+            </label>
           </div>
         ))}
       </div>
