@@ -70,7 +70,7 @@ h3 {
   margin: 0 0.5rem 5px 0.5rem;
 }
 .langFlag:active {
-  opacity: 0.3;
+  opacity: 0.5;
   border-radius: 2rem;
   height: 50px;
 }
