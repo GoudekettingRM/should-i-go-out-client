@@ -11,14 +11,14 @@ import messages_es from "./translations/es.json";
 import messages_pt from "./translations/pt.json";
 import messages_de from "./translations/de.json";
 import messages_at from "./translations/at.json";
-// import messages_ro from "./translations/ro.json";
+import messages_ro from "./translations/ro.json";
 import EnglishFlag from "./images/flags/uk.svg";
 import DutchFlag from "./images/flags/nl.svg";
 import SpanishFlag from "./images/flags/es.svg";
 import PortugueseFlag from "./images/flags/pt.svg";
 import GermanFlag from "./images/flags/de.svg";
 import AustrianFlag from "./images/flags/at.svg";
-// import RomanianFlag from "./images/flags/ro.svg";
+import RomanianFlag from "./images/flags/ro.svg";
 import { connect } from "react-redux";
 import { Question } from "./types/question";
 import { setAllQuestionsActionCreator } from "./store/questions/actions";
@@ -32,8 +32,8 @@ const messages: any = {
   es: messages_es,
   pt: messages_pt,
   "de-DE": messages_de,
-  "de-AT": messages_at
-  // ro: messages_ro,
+  "de-AT": messages_at,
+  ro: messages_ro
 };
 
 interface AppProps {}
@@ -82,7 +82,7 @@ const App: React.FC<Props> = props => {
           {renderFlagButton(PortugueseFlag, "pt", "Portuguese")}
           {renderFlagButton(GermanFlag, "de-DE", "German")}
           {renderFlagButton(AustrianFlag, "de-AT", "Austrian German")}
-          {/* {renderFlagButton(RomanianFlag, "ro", "Romanian")} */}
+          {renderFlagButton(RomanianFlag, "ro", "Romanian")}
         </div>
       </div>
     </IntlProvider>

@@ -1,0 +1,90 @@
+{
+  "app.title": "Bun venit pe Should-I-Go-Out?",
+  "app.startButton": "Vreau să ies din casă, dar ar trebui?",
+  "app.nextQuestionButton": "Înainte",
+  "app.retryButton": "Încearcă din nou",
+  "app.redirectToHome": "Înapoi la prima pagină...",
+  "app.noAnswerError": "Trebuie să alegi una dintre opțiuni",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Mergi la serviciu?",
+      "answers": ["da", "nu"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Mergi la cumpărături?",
+      "answers": ["da", "nu"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Mergi la farmacie?",
+      "answers": ["da", "nu"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Ieși la aer curat?",
+      "answers": ["da", "nu"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Mergi singur/ă sau doar cu cei cu care locuiești?",
+      "answers": [
+        "da, singur/ă sau cu cei cu care locuiesc",
+        "nu, cu altcineva"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Mergi să ajuți pe cineva bolnav?",
+      "answers": ["da", "nu"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Ceea ce vrei să faci ar putea aștepta?",
+      "answers": ["da", "nu"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Este slujba ta esențială pentru societate?",
+      "answers": ["da", "nu"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Ai putea să lucrezi de acasă?",
+      "answers": ["da", "nu"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Stai acasă.",
+      "explanation": "Momentan nu ai un motiv suficient de bun pentru a ieși din casă. Dacă vei face asta, te vei pune în pericol atât pe ține cât și pe cei din jurul tău. Te rog, nu face asta!"
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Cu siguranță ar trebui să ieși din casă!",
+      "explanation": "Activitatea ta este esențială pentru societate și îți mulțumim. Ține-o tot așa!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Ar fi mai bine dacă nu ai ieși din casă.",
+      "explanation": "Șeful tău ar trebui să îți dea voie să lucrezi de acasă. Mergând la serviciu, pui în pericol atât sănătatea ta cât și pe cea a celorlalți. Dacă vei hotărî să mergi, nu uita să păstrezi o distanță de cel puțin 1.5 metri de ceilalți."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Poți ieși din casă cu grijă.",
+      "explanation": "Poți merge să ai grijă de persoana pe care vrei să o ajuți! Mergi singur/ă și păstrează o distanță de cel puțin 1.5 metri de ceilalți. Ai grijă, mai ales, să nu te îmbolnăvești. Protejează-te respectând măsurile de igienă."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Poți ieși din casă cu grijă.",
+      "explanation": "Poți ieși pe scurt din casă pentru a face ceea ce ai de făcut. Mergi singur/ă și păstrează o distanță de cel puțin 1.5 metri de alți oameni. Dacă ceilalți vin prea aproape, atenționează-i și spune-le să păstreze distanța. Făcând asta, îi vei proteja atât pe ei, cât și pe tine."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Poți ieși din casă cu grijă.",
+      "explanation": "Poți ieși pe scurt din casă. Păstrează o distanță de cel puțin 1.5 metri de alți oameni. Dacă ceilalți vin prea aproape, atenționează-i și spune-le să păstreze distanța. Făcând asta, îi vei proteja atât pe ei, cât și pe tine."
+    }
+  }
+}
