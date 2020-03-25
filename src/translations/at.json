@@ -3,7 +3,7 @@
   "app.startButton": "I will raus, aba is des gscheid?",
   "app.nextQuestionButton": "Weiter",
   "app.retryButton": "No amoi",
-  "app.redirectToHome": "Zrück zum Start",
+  "app.redirectToHome": "Zruck zum Start",
   "app.noAnswerError": "Du musst dir eine Antwort aussuchen",
   "questions": [
     {
@@ -63,7 +63,7 @@
     },
     "youHero": {
       "id": 2,
-      "conclusion": "Worauf wartest, geh raus!",
+      "conclusion": "Worauf wartest, schleich di!",
       "explanation": "Dei Hackn is überlebensnotwenig für die Gsellschaft. Danke und weiter so!"
     },
     "youShouldKnowBetter": {
