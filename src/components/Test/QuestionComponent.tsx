@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { History } from "history";
 import Button from "react-bootstrap/Button";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, injectIntl, IntlShape } from "react-intl";
 
 interface QuestionProps {
   id: number;
@@ -9,6 +9,7 @@ interface QuestionProps {
   answers: string[];
   handleNextQuestion: (answer: string, id: number) => void;
   history: History;
+  intl: IntlShape;
 }
 
 const QuestionComponent: React.FC<QuestionProps> = props => {
@@ -21,7 +22,14 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
 
   const handleNext = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-    if (!givenAnswer) return alert("You have to fill in an answer");
+    if (!givenAnswer) {
+      return alert(
+        props.intl.formatMessage({
+          id: "app.noAnswerError",
+          defaultMessage: "You have choose one of the options"
+        })
+      );
+    }
     handleNextQuestion(givenAnswer, id);
   };
 
@@ -61,4 +69,4 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
   );
 };
 
-export default QuestionComponent;
+export default injectIntl(QuestionComponent);

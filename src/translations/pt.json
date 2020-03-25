@@ -4,6 +4,7 @@
   "app.nextQuestionButton": "Próximo",
   "app.retryButton": "Tentar outra vez",
   "app.redirectToHome": "Voltar ao início...",
+  "app.noAnswerError": "Tens que escolher uma das opções",
   "questions": [
     {
       "questionNumber": 1,

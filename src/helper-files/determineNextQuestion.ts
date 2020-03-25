@@ -1,4 +1,7 @@
-import { positiveAnswers, negativeAnswers } from "./determineConclusion";
+import {
+  positiveAnswers,
+  negativeAnswers
+} from "../translations/pos-neg-answers";
 
 export const determineNextQuestion = (
   givenAnswer: string,
