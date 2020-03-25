@@ -10,14 +10,14 @@ import messages_nl from "./translations/nl.json";
 import messages_es from "./translations/es.json";
 import messages_pt from "./translations/pt.json";
 import messages_de from "./translations/de.json";
-// import messages_at from "./translations/at.json";
+import messages_at from "./translations/at.json";
 // import messages_ro from "./translations/ro.json";
 import EnglishFlag from "./images/flags/uk.svg";
 import DutchFlag from "./images/flags/nl.svg";
 import SpanishFlag from "./images/flags/es.svg";
 import PortugueseFlag from "./images/flags/pt.svg";
 import GermanFlag from "./images/flags/de.svg";
-// import AustrianFlag from "./images/flags/at.svg";
+import AustrianFlag from "./images/flags/at.svg";
 // import RomanianFlag from "./images/flags/ro.svg";
 import { connect } from "react-redux";
 import { Question } from "./types/question";
@@ -31,8 +31,8 @@ const messages: any = {
   nl: messages_nl,
   es: messages_es,
   pt: messages_pt,
-  de: messages_de
-  // at: messages_at,
+  "de-DE": messages_de,
+  "de-AT": messages_at
   // ro: messages_ro,
 };
 
@@ -47,6 +47,7 @@ const App: React.FC<Props> = props => {
   const handleChangeLanguage = (newLanguage: string): void => {
     setLanguage(newLanguage);
   };
+
   useEffect(() => {
     setAllQuestions(messages[language].questions);
     setAllAnswers(messages[language].answers);
@@ -54,13 +55,13 @@ const App: React.FC<Props> = props => {
 
   const renderFlagButton = (
     flagImage: string,
-    twoLetterCode: string,
+    letterCode: string,
     languageFull: string
   ) => {
     return (
       <div
         className="langFlag"
-        onClick={() => handleChangeLanguage(twoLetterCode)}>
+        onClick={() => handleChangeLanguage(letterCode)}>
         <img src={flagImage} alt={languageFull} title={languageFull} />
       </div>
     );
@@ -79,8 +80,8 @@ const App: React.FC<Props> = props => {
           {renderFlagButton(EnglishFlag, "en", "English")}
           {renderFlagButton(SpanishFlag, "es", "Spanish")}
           {renderFlagButton(PortugueseFlag, "pt", "Portuguese")}
-          {renderFlagButton(GermanFlag, "de", "German")}
-          {/* {renderFlagButton(AustrianFlag, "at", "Austrian German")} */}
+          {renderFlagButton(GermanFlag, "de-DE", "German")}
+          {renderFlagButton(AustrianFlag, "de-AT", "Austrian German")}
           {/* {renderFlagButton(RomanianFlag, "ro", "Romanian")} */}
         </div>
       </div>
