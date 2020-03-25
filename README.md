@@ -1,8 +1,8 @@
-# Should I Go Out
+# 🌞 🌳 🌼 Should I Go Out 🌼 🌳 🌞
 
 ## [Check out the deployed version here!](http://www.should-i-go-out.com)
 
-## What this project is about
+## 🌱What this project is about🌱
 
 This little front-end application is about educating people as well as practicing a new language. I used Typescript, React, and Redux. For more about my goals for this project, checkout **[My Goals](#goals-for-this-project)**
 
@@ -21,7 +21,7 @@ This little front-end application is about educating people as well as practicin
 
 ## Technologies used
 
-#### 👀👇 Click links to view some samples in this project 👇👀
+#### 👀 👇 Click links to view some samples in this project 👇 👀
 
 - **[React](./src/components/Test/Test.tsx)**
 - **[Redux](./src/store/questions/reducer.ts)**
