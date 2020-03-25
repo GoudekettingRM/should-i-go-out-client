@@ -30,8 +30,8 @@ body {
 .questionAnswers {
   margin-bottom: 2rem;
   text-align: left;
-  transform: translateX(35%);
-  max-width: 60%;
+  transform: translateX(25%);
+  max-width: 80%;
 }
 .radioButton {
   margin-right: 5px;
