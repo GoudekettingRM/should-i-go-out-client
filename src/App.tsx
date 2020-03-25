@@ -7,6 +7,7 @@ import AnswerContainer from "./components/Answer/Answer";
 import { IntlProvider } from "react-intl";
 import messages_en from "./translations/en.json";
 import messages_nl from "./translations/nl.json";
+import messages_es from "./translations/es.json";
 import { connect } from "react-redux";
 import { Question } from "./types/question";
 import { bindActionCreators, Dispatch } from "redux";
@@ -15,10 +16,12 @@ import { setAllAnswersActionCreator } from "./store/answer/actions";
 import { Answers } from "./types/answer";
 import EnglishFlag from "./images/flags/uk.svg";
 import DutchFlag from "./images/flags/nl.svg";
+import SpanishFlag from "./images/flags/es.svg";
 
 const messages: any = {
   en: messages_en,
-  nl: messages_nl
+  nl: messages_nl,
+  es: messages_es
 };
 
 interface AppProps {}
@@ -35,7 +38,7 @@ const App: React.FC<Props> = props => {
   useEffect(() => {
     setAllQuestions(messages[language].questions);
     setAllAnswers(messages[language].answers);
-  }, [language, props]);
+  }, [language, setAllAnswers, setAllQuestions]);
 
   return (
     <IntlProvider locale={language} messages={messages[language]}>
@@ -51,6 +54,9 @@ const App: React.FC<Props> = props => {
           </div>
           <div className="langFlag" onClick={() => handleChangeLanguage("en")}>
             <img src={EnglishFlag} alt="English" />
+          </div>
+          <div className="langFlag" onClick={() => handleChangeLanguage("es")}>
+            <img src={SpanishFlag} alt="Spanish" />
           </div>
         </div>
       </div>

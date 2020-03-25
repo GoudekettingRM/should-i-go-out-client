@@ -1,0 +1,86 @@
+{
+  "app.title": "Bienvenido a Should-I-Go-Out?",
+  "app.startButton": "Quiero salir, pero deberia?",
+  "app.nextQuestionButton": "Siguiente",
+  "app.retryButton": "Reintentar",
+  "app.redirectToHome": "Volver al inicio...",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Sales a trabajar?",
+      "answers": ["si", "no"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Sales a hacer compras?",
+      "answers": ["si", "no"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Sales a la farmacia?",
+      "answers": ["si", "no"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Sales a tomar un poco de aire?",
+      "answers": ["si", "no"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Sales solo o solamente con las personas con las cuales vives?",
+      "answers": ["Si, solo o con las personas que vivo", "No, con mas gente"]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Sales a ayudar a una persona que se encuentra enferma?",
+      "answers": ["si", "no"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Sea lo que sea que sales a hacer, puede esperar?",
+      "answers": ["si", "no"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Es tu trabajo vital para la sociedad?",
+      "answers": ["si", "no"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Trabajar desde casa es una posibilidad para usted?",
+      "answers": ["si", "no"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Quedate en tu casa.",
+      "explanation": "No parece que tengas una razon valida para salir en este momento. Saliendo de igual manera estas poniendo a ti mismo y a otros en riesgo. Por favor considera no salir."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Si, DEFINITIVAMENTE deberias salir!",
+      "explanation": "Lo que estas haciendo es vital para el funcionamiento de la sociedad y te lo agradecemos mucho!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Es mejor que no salgas.",
+      "explanation": "Your boss should allow you to work from home. By going to work anyway, you endanger not only yourself, but also others. If you do decide to go, keep your distance to other people, at least 1.5 meters."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Puedes salir con cuidado.",
+      "explanation": "Por favor, vaya a cuidar a esa persona que quiere ayudar. Sal por tu cuenta y manten 1.5m de distancia con el resto de las peronas. Por sobre todo, ten cuidado de no enfermarte tu mismo, toma las medidas higienicas recomendadas."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Puedes salir con cuidado.",
+      "explanation": "Puedes salir momentaneamente a hacer lo que necesites. Sal por tu cuenta y manten 1.5m de distancia con el resto de las peronas. Si otras personas se acercan mucho, diles que mantengan su distancia. Haciendo esto estaras cuidando de ti y de ellos tambien."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Puedes salir con cuidado.",
+      "explanation": "Puedes salir momentaneamente. Manten 1.5m de distancia con el resto de las peronas. Si otras personas se acercan mucho, diles que mantengan su distancia. Haciendo esto estaras cuidando de ti y de ellos tambien."
+    }
+  }
+}
