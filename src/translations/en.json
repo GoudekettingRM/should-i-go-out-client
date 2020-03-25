@@ -1,0 +1,89 @@
+{
+  "app.title": "Welcome to Should-I-Go-Out?",
+  "app.startButton": "I want to go out, but is that wise?",
+  "app.nextQuestionButton": "Next",
+  "app.retryButton": "Check again",
+  "app.redirectToHome": "Back to home...",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Are you going to work?",
+      "answers": ["yes", "no"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Are you going to do groceries?",
+      "answers": ["yes", "no"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Are you going to the pharmacy?",
+      "answers": ["yes", "no"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Are you going to get some fresh air?",
+      "answers": ["yes", "no"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Are you going by yourself or just with the people you live with?",
+      "answers": [
+        "yes, by myself or with people I live with",
+        "no, with others"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Are you going to help out a sick person?",
+      "answers": ["yes", "no"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Whatever your are going to do, could it wait?",
+      "answers": ["yes", "no"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Is your job vital for society?",
+      "answers": ["yes", "no"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Is working from home a possibility?",
+      "answers": ["yes", "no"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Stay inside.",
+      "explanation": "You don't have a sound reason to go out at the moment. By doing so anyway, you endanger yourself and others. Please don't do this."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "You should DEFINITELY go out!",
+      "explanation": "What you're doing is crucial for our society and we thank you. Keep it up!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "You better not go out.",
+      "explanation": "Your boss should allow you to work from home. By going to work anyway, you endanger not only yourself, but also others. If you do decide to go, keep your distance to other people, at least 1.5 meters."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "You can carefully go out.",
+      "explanation": "Please, go take care of the person you want to help. Do go by yourself and keep a distance of 1.5 meters away from other people. Above all, take care not to get sick yourself, by taking proper hygiene measures."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "You can carefully go out.",
+      "explanation": "You can briefly go out to do what you have to do. Do go by yourself and keep a distance of 1.5 meters away from other people. If others come too close, say that and tell them to keep their distance. By doing this, you protect them and yourself."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "You can carefully go out.",
+      "explanation": "You can briefly go out. Keep a distance of 1.5 meters away from other people. If others come too close, say that and tell them to keep their distance. By doing this, you protect them and yourself."
+    }
+  }
+}
