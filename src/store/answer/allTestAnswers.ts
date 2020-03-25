@@ -16,7 +16,7 @@ export const answers: Answers = {
   stayIn: {
     conclusion: "Blijf binnen.",
     explanation:
-      "Je hebt geen gegronde reden om nu naar buiten te gaan. Door dit toch te doen, breng je anderen in gevaar. Doe dit alstublieft niet."
+      "Je hebt geen gegronde reden om nu naar buiten te gaan. Door dit toch te doen, breng je jezelf en anderen in gevaar. Doe dit alstublieft niet."
   },
   youHero: {
     conclusion: "Je kunt ZEKER gaan!",

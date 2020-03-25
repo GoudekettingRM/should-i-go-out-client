@@ -2,12 +2,20 @@ import { AppActions } from "../appActions";
 import { SET_ANSWER } from "./types";
 import { Answer } from "./allTestAnswers";
 
-const initialState: Answer = { explanation: "", conclusion: "" };
+interface ConclusionState {
+  all: Answer[];
+  drawn: Answer;
+}
 
-export const answerReducer = (state = initialState, action: AppActions) => {
+const initialState: ConclusionState = {
+  all: [],
+  drawn: { explanation: "", conclusion: "" }
+};
+
+export const conclusionReducer = (state = initialState, action: AppActions) => {
   switch (action.type) {
     case SET_ANSWER: {
-      return action.payload;
+      return { ...state, drawn: action.payload };
     }
     default:
       return state;

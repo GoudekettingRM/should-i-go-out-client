@@ -65,7 +65,7 @@ interface LinkDispatchProps {
 }
 
 const mapStateToProps = (state: AppState) => ({
-  currentQuestion: state.currentQuestion
+  currentQuestion: state.questions.current
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({

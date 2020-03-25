@@ -43,7 +43,7 @@ interface LinkDispatchProps {
 }
 
 const mapStateToProps = (state: AppState) => ({
-  answer: state.answer
+  answer: state.conclusions.drawn
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
