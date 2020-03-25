@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import { bindActionCreators, Dispatch } from "redux";
 import { Switch, Route } from "react-router";
+import { IntlProvider } from "react-intl";
 import HomePage from "./components/HomePage/HomePage";
 import Test from "./components/Test/Test";
 import AnswerContainer from "./components/Answer/Answer";
-import { IntlProvider } from "react-intl";
 import messages_en from "./translations/en.json";
 import messages_nl from "./translations/nl.json";
 import messages_es from "./translations/es.json";
-import { connect } from "react-redux";
-import { Question } from "./types/question";
-import { bindActionCreators, Dispatch } from "redux";
-import { setAllQuestionsActionCreator } from "./store/questions/actions";
-import { setAllAnswersActionCreator } from "./store/answer/actions";
-import { Answers } from "./types/answer";
 import EnglishFlag from "./images/flags/uk.svg";
 import DutchFlag from "./images/flags/nl.svg";
 import SpanishFlag from "./images/flags/es.svg";
+import { connect } from "react-redux";
+import { Question } from "./types/question";
+import { setAllQuestionsActionCreator } from "./store/questions/actions";
+import { setAllAnswersActionCreator } from "./store/answer/actions";
+import { Answers } from "./types/answer";
+import "./App.css";
 
 const messages: any = {
   en: messages_en,
