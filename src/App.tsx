@@ -10,12 +10,14 @@ import messages_nl from "./translations/nl.json";
 import messages_es from "./translations/es.json";
 import messages_pt from "./translations/pt.json";
 // import messages_de from "./translations/de.json";
+// import messages_at from "./translations/at.json";
 // import messages_ro from "./translations/ro.json";
 import EnglishFlag from "./images/flags/uk.svg";
 import DutchFlag from "./images/flags/nl.svg";
 import SpanishFlag from "./images/flags/es.svg";
 import PortugueseFlag from "./images/flags/pt.svg";
 // import GermanFlag from "./images/flags/de.svg";
+// import AustrianFlag from "./images/flags/at.svg";
 // import RomanianFlag from "./images/flags/ro.svg";
 import { connect } from "react-redux";
 import { Question } from "./types/question";
@@ -30,6 +32,7 @@ const messages: any = {
   es: messages_es,
   pt: messages_pt
   // de: messages_de,
+  // at: messages_at,
   // ro: messages_ro,
 };
 
@@ -77,6 +80,7 @@ const App: React.FC<Props> = props => {
           {renderFlagButton(SpanishFlag, "es", "Spanish")}
           {renderFlagButton(PortugueseFlag, "pt", "Portuguese")}
           {/* {renderFlagButton(GermanFlag, "de", "German")} */}
+          {/* {renderFlagButton(AustrianFlag, "at", "Austrian German")} */}
           {/* {renderFlagButton(RomanianFlag, "ro", "Romanian")} */}
         </div>
       </div>
