@@ -3,15 +3,18 @@ import { Answer, Answers } from "../types/answer";
 export const positiveAnswers: string[] = [
   "yes",
   "ja",
+  "si",
   "yes, by myself or with people I live with",
-  "ja, alleen of alleen met mensen die bij je in huis wonen"
+  "ja, alleen of alleen met mensen die bij je in huis wonen",
+  "Si, solo o con las personas que vivo"
 ];
 
 export const negativeAnswers: string[] = [
   "no",
   "nee",
   "no, with others",
-  "nee, ook met andere mensen"
+  "nee, ook met andere mensen",
+  "No, con mas gente"
 ];
 
 export const determineConclusion = (
