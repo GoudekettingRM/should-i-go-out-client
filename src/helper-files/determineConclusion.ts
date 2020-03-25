@@ -1,4 +1,4 @@
-import { answers, Answer } from "../store/answer/allTestAnswers";
+import { Answer, Answers } from "../types/answer";
 
 export const positiveAnswers: string[] = [
   "yes",
@@ -16,33 +16,34 @@ export const negativeAnswers: string[] = [
 
 export const determineConclusion = (
   finalQuestionAnswer: string,
-  finalQuestionId: number
+  finalQuestionId: number,
+  allAnswers: Answers
 ): Answer => {
   if (
     (finalQuestionId === 5 && negativeAnswers.includes(finalQuestionAnswer)) ||
     (finalQuestionId === 7 && positiveAnswers.includes(finalQuestionAnswer)) ||
     (finalQuestionId === 9 && positiveAnswers.includes(finalQuestionAnswer))
   )
-    return answers.stayIn;
+    return allAnswers.stayIn;
 
   if (finalQuestionId === 8 && positiveAnswers.includes(finalQuestionAnswer))
-    return answers.youHero;
+    return allAnswers.youHero;
 
   if (
     (finalQuestionId === 2 && positiveAnswers.includes(finalQuestionAnswer)) ||
     (finalQuestionId === 3 && positiveAnswers.includes(finalQuestionAnswer)) ||
     (finalQuestionId === 7 && negativeAnswers.includes(finalQuestionAnswer))
   )
-    return answers.goAlone;
+    return allAnswers.goAlone;
 
   if (finalQuestionId === 5 && positiveAnswers.includes(finalQuestionAnswer))
-    return answers.avoidOthers;
+    return allAnswers.avoidOthers;
 
   if (finalQuestionId === 6 && positiveAnswers.includes(finalQuestionAnswer))
-    return answers.caretaker;
+    return allAnswers.caretaker;
 
   if (finalQuestionId === 9 && negativeAnswers.includes(finalQuestionAnswer))
-    return answers.youShouldKnowBetter;
+    return allAnswers.youShouldKnowBetter;
 
-  return answers.stayIn;
+  return allAnswers.stayIn;
 };

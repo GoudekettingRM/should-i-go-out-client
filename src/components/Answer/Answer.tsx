@@ -5,7 +5,8 @@ import { RouteComponentProps } from "react-router-dom";
 import { Dispatch, bindActionCreators } from "redux";
 import { setCurrentQuestionActionCreator } from "../../store/questions/actions";
 import Button from "react-bootstrap/Button";
-import { Answer } from "../../store/answer/allTestAnswers";
+import { FormattedMessage } from "react-intl";
+import { Answer } from "../../types/answer";
 
 interface AnswerProps extends RouteComponentProps {}
 
@@ -23,14 +24,20 @@ const AnswerContainer: React.FC<Props> = ({
 
   if (!answer.conclusion) {
     history.push("/");
-    return <div>Terug naar home...</div>;
+    return (
+      <div>
+        <FormattedMessage id="app.redirectToHome" />
+      </div>
+    );
   }
 
   return (
     <div className="pageContent">
       <h3>{answer.conclusion}</h3>
       <p>{answer.explanation}</p>
-      <Button onClick={restartTest}>Check opnieuw</Button>
+      <Button onClick={restartTest}>
+        <FormattedMessage id="app.retryButton" />
+      </Button>
     </div>
   );
 };

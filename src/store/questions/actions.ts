@@ -1,6 +1,5 @@
 import { SET_CURRENT_QUESTION, SET_ALL_QUESTIONS } from "./types";
 import { AppActions } from "../appActions";
-// import { questions } from "./allTestQuestions";
 import { Question } from "../../types/question";
 import { generateError } from "../../helper-files/generateError";
 import { store } from "../store";

@@ -19,16 +19,10 @@ const HomePage: React.FC<Props> = props => {
   return (
     <div className="introScreen">
       <h1>
-        <FormattedMessage
-          id="app.title"
-          defaultMessage="Welkom bij Should-I-Go-Out?"
-        />
+        <FormattedMessage id="app.title" />
       </h1>
       <Button type="button" onClick={startTest}>
-        <FormattedMessage
-          id="app.startButton"
-          defaultMessage="Ik wil naar buiten gaan, maar is dat wel handig?"
-        />
+        <FormattedMessage id="app.startButton" />
       </Button>
     </div>
   );

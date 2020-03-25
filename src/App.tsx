@@ -11,6 +11,10 @@ import { connect } from "react-redux";
 import { Question } from "./types/question";
 import { bindActionCreators, Dispatch } from "redux";
 import { setAllQuestionsActionCreator } from "./store/questions/actions";
+import { setAllAnswersActionCreator } from "./store/answer/actions";
+import { Answers } from "./types/answer";
+import EnglishFlag from "./images/flags/uk.svg";
+import DutchFlag from "./images/flags/nl.svg";
 
 const messages: any = {
   en: messages_en,
@@ -22,14 +26,15 @@ interface AppProps {}
 type Props = AppProps & LinkDispatchProps;
 
 const App: React.FC<Props> = props => {
+  const { setAllQuestions, setAllAnswers } = props;
   const [language, setLanguage] = useState("en");
 
   const handleChangeLanguage = (newLanguage: string): void => {
     setLanguage(newLanguage);
   };
   useEffect(() => {
-    props.setAllQuestions(messages[language].questions);
-    //set all answers as well
+    setAllQuestions(messages[language].questions);
+    setAllAnswers(messages[language].answers);
   }, [language, props]);
 
   return (
@@ -41,8 +46,12 @@ const App: React.FC<Props> = props => {
           <Route path="/answer" exact component={AnswerContainer} />
         </Switch>
         <div className="languageButtons">
-          <button onClick={() => handleChangeLanguage("nl")}>Dutch</button>
-          <button onClick={() => handleChangeLanguage("en")}>English</button>
+          <div className="langFlag" onClick={() => handleChangeLanguage("nl")}>
+            <img src={DutchFlag} alt="Dutch" />
+          </div>
+          <div className="langFlag" onClick={() => handleChangeLanguage("en")}>
+            <img src={EnglishFlag} alt="English" />
+          </div>
         </div>
       </div>
     </IntlProvider>
@@ -51,10 +60,12 @@ const App: React.FC<Props> = props => {
 
 interface LinkDispatchProps {
   setAllQuestions: (allQuestions: Question[]) => void;
+  setAllAnswers: (allAnswers: Answers) => void;
 }
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  setAllQuestions: bindActionCreators(setAllQuestionsActionCreator, dispatch)
+  setAllQuestions: bindActionCreators(setAllQuestionsActionCreator, dispatch),
+  setAllAnswers: bindActionCreators(setAllAnswersActionCreator, dispatch)
 });
 
 export default connect(null, mapDispatchToProps)(App);

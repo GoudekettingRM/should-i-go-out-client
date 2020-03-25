@@ -10,7 +10,7 @@ import { History } from "history";
 import { generateError } from "../../helper-files/generateError";
 import { setAnswerActionCreator } from "../../store/answer/actions";
 import { determineConclusion } from "../../helper-files/determineConclusion";
-import { Answer } from "../../store/answer/allTestAnswers";
+import { Answer, Answers } from "../../types/answer";
 
 interface TestProps {
   history: History;
@@ -19,7 +19,13 @@ interface TestProps {
 type Props = TestProps & LinkStateProps & LinkDispatchProps;
 
 const Test: React.FC<Props> = props => {
-  const { question, answers, questionNumber } = props.currentQuestion;
+  const {
+    setCurrentQuestion,
+    setAnswer,
+    history,
+    allAnswers,
+    currentQuestion: { question, answers, questionNumber }
+  } = props;
   const [answeredQuestions, setAnsweredQuestions] = useState<number[]>([]);
 
   const handleNextQuestion = (answer: string, id: number): void => {
@@ -27,10 +33,10 @@ const Test: React.FC<Props> = props => {
 
     if (nextQuestionNumber > 0) {
       setAnsweredQuestions(prev => [...prev, id]);
-      props.setCurrentQuestion(nextQuestionNumber);
+      setCurrentQuestion(nextQuestionNumber);
     } else if (!nextQuestionNumber && answeredQuestions.length > 0) {
-      props.setAnswer(determineConclusion(answer, id));
-      props.history.push("/answer");
+      setAnswer(determineConclusion(answer, id, allAnswers));
+      history.push("/answer");
     } else if (!answeredQuestions.length) {
       return;
     } else {
@@ -57,6 +63,7 @@ const Test: React.FC<Props> = props => {
 
 interface LinkStateProps {
   currentQuestion: Question;
+  allAnswers: Answers;
 }
 
 interface LinkDispatchProps {
@@ -65,7 +72,8 @@ interface LinkDispatchProps {
 }
 
 const mapStateToProps = (state: AppState) => ({
-  currentQuestion: state.questions.current
+  currentQuestion: state.questions.current,
+  allAnswers: state.conclusions.all
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({

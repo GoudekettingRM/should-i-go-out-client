@@ -58,4 +58,17 @@ h3 {
   position: fixed;
   top: 10px;
   right: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.langFlag {
+  height: 50px;
+  width: 50px;
+  margin: 0 0.5rem;
+}
+.langFlag:active {
+  opacity: 0.3;
+  border-radius: 2rem;
+  height: 50px;
 }
