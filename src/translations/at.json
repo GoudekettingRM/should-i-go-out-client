@@ -1,0 +1,90 @@
+{
+  "app.title": "Servas bei Should-I-Go-Out?",
+  "app.startButton": "I will raus, aba is des gscheid?",
+  "app.nextQuestionButton": "Weiter",
+  "app.retryButton": "No amoi",
+  "app.redirectToHome": "Zrück zum Start",
+  "app.noAnswerError": "Du musst dir eine Antwort aussuchen",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Gehst hackeln?",
+      "answers": ["ja", "na"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Gehst Essen einkaufen?",
+      "answers": ["ja", "na"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Gehst zum Apotheker?",
+      "answers": ["ja", "na"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Gehst spazieren?",
+      "answers": ["ja", "na"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Gehst allan oder mit Leuten mit denenst zamwohnst raus?",
+      "answers": [
+        "ja, allan oder mit Leuten mit denen ich zamwohn",
+        "na, mit anderen Leuten"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Willst an kranken Hawerer helfen?",
+      "answers": ["ja", "na"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Muass das jetzt sein?",
+      "answers": ["ja", "na"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Ist dei Hackn überlebensnotwendig für die Leitl?",
+      "answers": ["ja", "na"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Kannst von daham hackeln?",
+      "answers": ["ja", "na"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Bleib zaus.",
+      "explanation": "Du hast kan guatn Grund raus zu gehen. Du bringst dich selbst und andere in Gefahr, wennst rausgehst. Also bleib daham!"
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Worauf wartest, geh raus!",
+      "explanation": "Dei Hackn is überlebensnotwenig für die Gsellschaft. Danke und weiter so!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "I dadat ned rausgehn.",
+      "explanation": "Dein Chef sollte dir erlauben von zu Hause zu arbeiten. Du bringst dich selbst und andere in Gefahr, wennst rausgehst. Wennst doch beschließst rauszugehen, halt Abstand zu anderen, zumindest 1,5 Meter."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Du kannst vorsichtig rausgehen.",
+      "explanation": "Kümmer dich gut um deinen Hawerer. Geh allein und halt zumindest 1,5 Meter Abstand zu anderen. Halt dich an die Hygienevorschriften, damitst nicht selbst krank wirst."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Du kannst vorsichtig rausgehen.",
+      "explanation": "Du kannst kurz rausgehen, mach was du machen musst. Geh allein und halt zumindest 1,5 Meter Abstand zu anderen. Wenn andere dir zu nahe kommen, sags ihnen und bitte sie Abstand zu halten. Dadurch beschützt du sie und dich selbst."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Du kannst vorsichtig rausgehen.",
+      "explanation": "Du kannst kurz rausgehen. Halt 1,5 Meter Abstand zu anderen. Wenn andere dir zu nahe kommen, sags ihnen und bitte sie darum Abstand zu halten. Dadurch beschützt du sie und dich selbst."
+    }
+  }
+}
