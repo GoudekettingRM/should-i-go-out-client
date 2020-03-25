@@ -1,0 +1,90 @@
+{
+  "app.title": "Willkommen bei Should-I-Go-Out?",
+  "app.startButton": "Ich will raus, aber ist das schlau?",
+  "app.nextQuestionButton": "Weiter",
+  "app.retryButton": "Nochmal probieren",
+  "app.redirectToHome": "Zurück zum Start",
+  "app.noAnswerError": "Du musst eine Antwort wählen",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Gehst du zur Arbeit?",
+      "answers": ["ja", "nein"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Gehst du Lebensmittel einkaufen?",
+      "answers": ["ja", "nein"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Gehst du zur Apotheke?",
+      "answers": ["ja", "nein"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Gehst du frische Luft schnappen?",
+      "answers": ["ja", "nein"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Gehst du alleine bzw. mit Leuten mit denen du zusammenwohnst raus?",
+      "answers": [
+        "ja, alleine oder mit Leuten mit denen ich zusammenwohne",
+        "nein, mit anderen Leuten"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Bist du unterwegs zu einem kranken Bekannten um ihm/ihr zu helfen?",
+      "answers": ["ja", "nein"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Kann was du vorhast warten?",
+      "answers": ["ja", "nein"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Ist dein Job überlebensnotwendig für die Gesellschaft?",
+      "answers": ["ja", "nein"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Kannst du von zu Hause aus arbeiten?",
+      "answers": ["ja", "nein"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Bleib zu Hause.",
+      "explanation": "Du hast zurzeit keinen guten Grund raus zu gehen. Du bringst dich selbst und andere in Gefahr, wenn du das doch tust. Bitte mach's nicht."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Du solltest AUF JEDEN FALL rausgehen!",
+      "explanation": "Was du tust, ist überlebensnotwenig für die Gesellschaft und wir danken dir. Weiter so!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Geh lieber nicht raus.",
+      "explanation": "Dein Chef sollte dir erlauben von zu Hause zu arbeiten. Du bringst dich selbst und andere in Gefahr, wenn du das doch tust. Wenn du doch beschließt zu gehen, halte Abstand zu anderen, zumindest 1,5 Meter."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Du kannst vorsichtig rausgehen.",
+      "explanation": "Bitte kümmere dich gut um deine(n) Bekannte(n). Geh allein und halte zumindest 1,5 Meter Abstand zu anderen. Halte dich an die Hygienevorschriften, sodass du nicht selbst krank wirst."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Du kannst vorsichtig rausgehen.",
+      "explanation": "Du kannst kurz rausgehen, um zu tun was du tun musst. Geh allein und halte zumindest 1,5 Meter Abstand zu anderen. Wenn andere dir zu nahe kommen, sag es ihnen und bitte sie darum Abstand zu halten. Dadurch beschützt du sie und dich selbst."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Du kannst vorsichtig rausgehen.",
+      "explanation": "Du kannst kurz rausgehen. Halte 1,5 Meter Abstand zu anderen. Wenn andere dir zu nahe kommen, sag es ihnen und bitte sie darum Abstand zu halten. Dadurch beschützt du sie und dich selbst."
+    }
+  }
+}
