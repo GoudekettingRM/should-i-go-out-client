@@ -28,7 +28,7 @@
     {
       "questionNumber": 5,
       "question": "Sales solo o solamente con las personas con las cuales vives?",
-      "answers": ["Si, solo o con las personas que vivo", "No, con mas gente"]
+      "answers": ["si, solo o con las personas que vivo", "no, con mas gente"]
     },
     {
       "questionNumber": 6,

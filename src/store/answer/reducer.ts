@@ -54,7 +54,6 @@ export const conclusionReducer = (
       ) as Array<keyof typeof action.payload>)
         .map(answer => action.payload[answer])
         .find(answer => answer.id === state.drawn.id);
-      console.log("New drawn conclusion test", newDrawnConclusion);
 
       if (newDrawnConclusion) {
         return {

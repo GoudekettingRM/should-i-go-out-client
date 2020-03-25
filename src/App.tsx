@@ -1,27 +1,36 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import { bindActionCreators, Dispatch } from "redux";
 import { Switch, Route } from "react-router";
+import { IntlProvider } from "react-intl";
 import HomePage from "./components/HomePage/HomePage";
 import Test from "./components/Test/Test";
 import AnswerContainer from "./components/Answer/Answer";
-import { IntlProvider } from "react-intl";
 import messages_en from "./translations/en.json";
 import messages_nl from "./translations/nl.json";
 import messages_es from "./translations/es.json";
-import { connect } from "react-redux";
-import { Question } from "./types/question";
-import { bindActionCreators, Dispatch } from "redux";
-import { setAllQuestionsActionCreator } from "./store/questions/actions";
-import { setAllAnswersActionCreator } from "./store/answer/actions";
-import { Answers } from "./types/answer";
+import messages_pt from "./translations/pt.json";
+// import messages_de from "./translations/de.json";
+// import messages_ro from "./translations/ro.json";
 import EnglishFlag from "./images/flags/uk.svg";
 import DutchFlag from "./images/flags/nl.svg";
 import SpanishFlag from "./images/flags/es.svg";
+import PortugueseFlag from "./images/flags/pt.svg";
+// import GermanFlag from "./images/flags/de.svg";
+// import RomanianFlag from "./images/flags/ro.svg";
+import { connect } from "react-redux";
+import { Question } from "./types/question";
+import { setAllQuestionsActionCreator } from "./store/questions/actions";
+import { setAllAnswersActionCreator } from "./store/answer/actions";
+import { Answers } from "./types/answer";
+import "./App.css";
 
 const messages: any = {
   en: messages_en,
   nl: messages_nl,
-  es: messages_es
+  es: messages_es,
+  pt: messages_pt
+  // de: messages_de,
+  // ro: messages_ro,
 };
 
 interface AppProps {}
@@ -40,6 +49,20 @@ const App: React.FC<Props> = props => {
     setAllAnswers(messages[language].answers);
   }, [language, setAllAnswers, setAllQuestions]);
 
+  const renderFlagButton = (
+    flagImage: string,
+    twoLetterCode: string,
+    languageFull: string
+  ) => {
+    return (
+      <div
+        className="langFlag"
+        onClick={() => handleChangeLanguage(twoLetterCode)}>
+        <img src={flagImage} alt={languageFull} title={languageFull} />
+      </div>
+    );
+  };
+
   return (
     <IntlProvider locale={language} messages={messages[language]}>
       <div className="App">
@@ -49,15 +72,12 @@ const App: React.FC<Props> = props => {
           <Route path="/answer" exact component={AnswerContainer} />
         </Switch>
         <div className="languageButtons">
-          <div className="langFlag" onClick={() => handleChangeLanguage("nl")}>
-            <img src={DutchFlag} alt="Dutch" />
-          </div>
-          <div className="langFlag" onClick={() => handleChangeLanguage("en")}>
-            <img src={EnglishFlag} alt="English" />
-          </div>
-          <div className="langFlag" onClick={() => handleChangeLanguage("es")}>
-            <img src={SpanishFlag} alt="Spanish" />
-          </div>
+          {renderFlagButton(DutchFlag, "nl", "Dutch")}
+          {renderFlagButton(EnglishFlag, "en", "English")}
+          {renderFlagButton(SpanishFlag, "es", "Spanish")}
+          {renderFlagButton(PortugueseFlag, "pt", "Portuguese")}
+          {/* {renderFlagButton(GermanFlag, "de", "German")} */}
+          {/* {renderFlagButton(RomanianFlag, "ro", "Romanian")} */}
         </div>
       </div>
     </IntlProvider>

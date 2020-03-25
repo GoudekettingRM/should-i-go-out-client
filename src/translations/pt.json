@@ -1,0 +1,89 @@
+{
+  "app.title": "Bem-vindo a Should-I-Go-Out?",
+  "app.startButton": "Quero sair de casa, mas será que devo?",
+  "app.nextQuestionButton": "Próximo",
+  "app.retryButton": "Tentar outra vez",
+  "app.redirectToHome": "Voltar ao início...",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Vais para o trabalho?",
+      "answers": ["sim", "não"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Vais comprar comida?",
+      "answers": ["sim", "não"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Vais à farmácia?",
+      "answers": ["sim", "não"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Vais sair para apanhar ar?",
+      "answers": ["sim", "não"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Vais sozinho ou somente com pessoas com quem vives?",
+      "answers": [
+        "sim, sozinho ou com pessoas com quem vivo",
+        "não, vou sair com outras pessoas"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Vais sair para ajudar alguém que está doente?",
+      "answers": ["sim", "não"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Seja o que for que vais fazer, pode esperar?",
+      "answers": ["sim", "não"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "O teu trabalho é essencial para a sociedade?",
+      "answers": ["sim", "não"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Podes trabalhar a partir de casa?",
+      "answers": ["sim", "não"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Fica em casa.",
+      "explanation": "Não tens uma razão boa para sair de casa neste momento. Se saires à mesma, estás a arriscar a tua saúde e a dos outros. Por favor, fica em casa."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Deves DEFINITIVAMENTE sair!",
+      "explanation": "As tuas actividades são cruciais para a sociedade, por isso obrigada. Continua!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Espero que não tenhas que sair de casa.",
+      "explanation": "O teu empregador deveria deixar-te trabalhar a partir de casa. Se não deixa, está a arriscar a tua saúde e a dos outros. Se tiveres mesmo que ir, mantem pelo menos 1,5 metros de distância entre ti e outras pessoas."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Podes sair, mas tem cuidado.",
+      "explanation": "Vai ajudar quem precisas de ajudar. Vai sozinho e mantem pelo menos 1,5 metros de distância entre ti e as outras pessoas. Acima de tudo, tenta não ficar doente, tomando as próprias medidas de higiene."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Podes sair, mas tem cuidado.",
+      "explanation": "Podes sair e faz rapidamente que precisas de fazer. Vai sozinho e mantem pelo menos 1,5 metros de distância entre ti e as outras pessoas. Se outras pessoas vierem para perto de ti, pede-lhes para manter a distância. Ao fazer isto, estas a proteger-te a ti e a eles."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Podes sair, mas tem cuidado.",
+      "explanation": "Podes sair para rapidamente fazer o que queres fazer. Mantem pelo menos 1,5 metros de distância entre ti e as outras pessoas. Se outras pessoas vierem para perto de ti, pede-lhes para manter a distancia. Ao fazer isto, estas a proteger-te a ti e a eles."
+    }
+  }
+}
