@@ -55,13 +55,13 @@ const App: React.FC<Props> = props => {
 
   const renderFlagButton = (
     flagImage: string,
-    twoLetterCode: string,
+    letterCode: string,
     languageFull: string
   ) => {
     return (
       <div
         className="langFlag"
-        onClick={() => handleChangeLanguage(twoLetterCode)}>
+        onClick={() => handleChangeLanguage(letterCode)}>
         <img src={flagImage} alt={languageFull} title={languageFull} />
       </div>
     );
