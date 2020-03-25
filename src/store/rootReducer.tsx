@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import { questionReducer } from "./questions/reducer";
-import { answerReducer } from "./answer/reducer";
+import { conclusionReducer } from "./answer/reducer";
+import { languageReducer } from "./language/reducer";
 
 export const rootReducer = combineReducers({
-  currentQuestion: questionReducer,
-  answer: answerReducer
+  questions: questionReducer,
+  conclusions: conclusionReducer,
+  language: languageReducer
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

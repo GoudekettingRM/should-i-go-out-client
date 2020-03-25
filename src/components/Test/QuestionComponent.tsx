@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { History } from "history";
 import Button from "react-bootstrap/Button";
+import { FormattedMessage } from "react-intl";
 
 interface QuestionProps {
   id: number;
@@ -27,7 +28,11 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
 
   if (!question) {
     history.push("/");
-    return <div>Terug naar home</div>;
+    return (
+      <div>
+        <FormattedMessage id="app.redirectToHome" />
+      </div>
+    );
   }
 
   return (
@@ -50,7 +55,9 @@ const QuestionComponent: React.FC<QuestionProps> = props => {
         ))}
       </div>
 
-      <Button type="submit">Volgende vraag</Button>
+      <Button type="submit">
+        <FormattedMessage id="app.nextQuestionButton" />
+      </Button>
     </form>
   );
 };

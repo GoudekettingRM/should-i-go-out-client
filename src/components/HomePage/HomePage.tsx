@@ -3,6 +3,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { setCurrentQuestionActionCreator } from "../../store/questions/actions";
 import { connect } from "react-redux";
 import { Dispatch, bindActionCreators } from "redux";
+import { FormattedMessage } from "react-intl";
 import Button from "react-bootstrap/Button";
 
 interface HomePageProps extends RouteComponentProps {}
@@ -17,9 +18,11 @@ const HomePage: React.FC<Props> = props => {
 
   return (
     <div className="introScreen">
-      <h1>Welkom bij Should-I-Go-Out?</h1>
+      <h1>
+        <FormattedMessage id="app.title" />
+      </h1>
       <Button type="button" onClick={startTest}>
-        Ik wil naar buiten gaan, maar is dat wel handig?
+        <FormattedMessage id="app.startButton" />
       </Button>
     </div>
   );
