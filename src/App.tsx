@@ -9,11 +9,15 @@ import Test from "./components/Test/Test";
 import { setAllAnswersActionCreator } from "./store/answer/actions";
 import { setAllQuestionsActionCreator } from "./store/questions/actions";
 import { messages } from "./translations/allMessages";
-import { languageButtonsData } from "./translations/languageButtons";
+import {
+  languageButtonsData,
+  getCurrentLanguageImage
+} from "./translations/languageButtons";
 import { english } from "./translations/letterCodes";
 import { Answers } from "./types/answer";
 import { Question } from "./types/question";
 import ChangeLanguage from "./images/changeLanguage.svg";
+
 import "./App.css";
 
 interface AppProps {}
@@ -69,9 +73,9 @@ const App: React.FC<Props> = props => {
       <div className="App">
         <nav className={navClass}>
           <img
-            src={ChangeLanguage}
+            src={getCurrentLanguageImage(language)}
             alt="Change language"
-            className="toggleButton"
+            className={`toggleButton`}
             onClick={toggleNav}
           />
           <div className="flagContainer">

@@ -1,3 +1,4 @@
+import ChangeLanguage from "../images/changeLanguage.svg";
 import DutchFlag from "../images/flags/nl.svg";
 import EnglishFlag from "../images/flags/uk.svg";
 import SpanishFlag from "../images/flags/es.svg";
@@ -5,8 +6,10 @@ import PortugueseFlag from "../images/flags/pt.svg";
 import GermanFlag from "../images/flags/de.svg";
 import AustrianFlag from "../images/flags/at.svg";
 import RomanianFlag from "../images/flags/ro.svg";
+import NorwegianFlag from "../images/flags/nb.svg";
+import DanishFlag from "../images/flags/da.svg";
 // import ItalianFlag from "../images/flags/it.svg";
-// import NorwegianFlag from "../images/flags/no.svg";
+
 import {
   english,
   dutch,
@@ -14,9 +17,10 @@ import {
   portuguese,
   german,
   austrian,
-  romanian
+  romanian,
+  norwegian,
+  danish
   // italian,
-  // norwegian
 } from "./letterCodes";
 
 interface LanguageButtonType {
@@ -36,7 +40,22 @@ export const languageButtonsData: LanguageButtonType[] = [
     letterCode: austrian,
     languageFull: "Austrian German"
   },
-  { image: RomanianFlag, letterCode: romanian, languageFull: "Romanian" }
+  { image: RomanianFlag, letterCode: romanian, languageFull: "Romanian" },
+  { image: NorwegianFlag, letterCode: norwegian, languageFull: "Norwegian" },
+  { image: DanishFlag, letterCode: danish, languageFull: "Danish" }
+
   // { image: ItalianFlag, letterCode: italian, languageFull: "Italian" }
-  // { image: NorwegianFlag, letterCode: norwegian, languageFull: "Norwegian" }
 ];
+
+export const getCurrentLanguageImage = (language: string): string => {
+  const currentLanguage:
+    | LanguageButtonType
+    | undefined = languageButtonsData.find(
+    languageData => languageData.letterCode === language
+  );
+  if (currentLanguage) {
+    return currentLanguage.image;
+  } else {
+    return ChangeLanguage;
+  }
+};

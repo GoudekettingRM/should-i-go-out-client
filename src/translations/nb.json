@@ -1,0 +1,87 @@
+{
+  "app.title": "Welkommen til Kan-Jeg-Gå-Ut?",
+  "app.startButton": "Jeg har lyst å gå ut, men er det klokt?",
+  "app.nextQuestionButton": "Neste",
+  "app.retryButton": "Sjekk igjen",
+  "app.redirectToHome": "Tilbake til hjem...",
+  "app.noAnswerError": "Velg mellom alternativene",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Skal du gå på jobb?",
+      "answers": ["ja", "nei"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Skal du til butikken?",
+      "answers": ["ja", "nei"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Skal du til apoteket?",
+      "answers": ["ja", "nei"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Vil du få noe frisk luft?",
+      "answers": ["ja", "nei"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Skal du gå med deg selv eller de du bor med?",
+      "answers": ["Ja, alene eller de jeg bor med", "Nei, med andre"]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Skal du hjelpe en syk person?",
+      "answers": ["ja", "nei"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Hva enn du skal gjøre, kan det vente?",
+      "answers": ["ja", "nei"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Er jobben din viktig for samfunnet?",
+      "answers": ["ja", "nei"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Kan du jobbe hjemmefra?",
+      "answers": ["ja", "nei"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Bli hjemme.",
+      "explanation": "Du har ikke en god nok grunn til å gå ut. Dersom du gjør det er du i fare for deg selv og andre. Vennligst ikke gjør det."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Du kan ABSOLUTT gå ut!",
+      "explanation": "Det som du gjør er viktig for samfunnet. Stå på!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Du bør ikke gå ut",
+      "explanation": "Din sjef burde la deg jobbe hjemme fra. Dersom du går på jobb setter du deg selv og andre i fare. Dersom du velger å gå så hold avstand fra folk, minst 1,5 meter."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Du kan gå ut uten problemer",
+      "explanation": "Vennligst ta vare på den personen som du vil hjelpe. Gå alene og hold en avstand på 1.5 meter fra folk. Ta vare på deg selv først og fremst ved å være hygienisk"
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Du kan gå ut med forsiktighet",
+      "explanation": "Du kan gå ut og gjøre det som er ytterst nødvendig. Gå alene og hold en avstand på 1.5 meter fra folk. Dersom andre kommer for nærme så gi beskjed om å holde avstand. Ved å gjøre det beskytter du deg selv og andre."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Du kan gå ut med forsiktighet",
+      "explanation": "Du kan gå ut for en kort periode. Hold avstand på 1.5 meter fra andre. Dersom andre kommer for nærme så gi beskjed om å holde avstand. Ved å gjøre det beskytter du deg selv og andre."
+    }
+  }
+}

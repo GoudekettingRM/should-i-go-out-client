@@ -1,7 +1,7 @@
 {
   "app.title": "Bem-vindo a Should-I-Go-Out?",
   "app.startButton": "Quero sair de casa, mas será que devo?",
-  "app.nextQuestionButton": "Próximo",
+  "app.nextQuestionButton": "Seguinte",
   "app.retryButton": "Tentar outra vez",
   "app.redirectToHome": "Voltar ao início...",
   "app.noAnswerError": "Tens que escolher uma das opções",
