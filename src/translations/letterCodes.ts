@@ -1,0 +1,9 @@
+export const english: string = "en";
+export const dutch: string = "nl";
+export const spanish: string = "es";
+export const portuguese: string = "pt";
+export const german: string = "de-DE";
+export const austrian: string = "de-AT";
+export const romanian: string = "ro";
+export const italian: string = "it";
+export const norwegian: string = "no";

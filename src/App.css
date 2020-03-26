@@ -8,7 +8,11 @@ body {
 }
 .App {
   height: 90vh;
+}
+.content {
+  height: 80vh;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
 }
@@ -55,11 +59,6 @@ h3 {
   font-size: 1.3rem;
 }
 .languageButtons {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  height: 115px;
-  overflow-y: scroll;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -67,10 +66,54 @@ h3 {
 .langFlag {
   height: 50px;
   width: 50px;
-  margin: 0 0.5rem 5px 0.5rem;
+  margin: 5px 0.5rem;
 }
 .langFlag:active {
   opacity: 0.5;
   border-radius: 2rem;
   height: 50px;
+}
+nav {
+  width: 100%;
+  text-align: right;
+}
+
+@media only screen and (min-width: 600px) {
+  .toggleButton {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .toggleButton {
+    margin: 10px;
+    height: 40px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  .toggleButton:hover {
+    background-color: lightgray;
+  }
+  .toggleButton:active {
+    background-color: gray;
+  }
+  .languageButtons {
+    display: none;
+  }
+  .flagContainer {
+    position: absolute;
+    width: 100%;
+  }
+  .languageButtons.show {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: rgb(211, 211, 211, 0.5);
+  }
+  nav.show {
+    background-color: rgb(211, 211, 211, 0.5);
+  }
 }
