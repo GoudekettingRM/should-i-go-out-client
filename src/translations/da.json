@@ -1,0 +1,90 @@
+{
+  "app.title": "Velkommen til Should-I-Go-Out?",
+  "app.startButton": "Jeg vil gå udenfor, men er det klogt?",
+  "app.nextQuestionButton": "Videre",
+  "app.retryButton": "En gang til",
+  "app.redirectToHome": "Tilbage til start",
+  "app.noAnswerError": "Du må vælge et svar.",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Ta'r du på arbejde?",
+      "answers": ["ja", "nej"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Skal du ud at handle?",
+      "answers": ["ja", "nej"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Skal du på apoteket?",
+      "answers": ["ja", "nej"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Skal du gå en tur?",
+      "answers": ["ja", "nej"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Skal du ud alene eller med huskammerater?",
+      "answers": [
+        "ja, allene eller med huskammerater",
+        "nej, med andre mennesker"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Er du på vej til at hjælpe en syg ven?",
+      "answers": ["ja", "nej"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Kan det vente?",
+      "answers": ["ja", "nej"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Er dit arbejde nødvendigt for samfundet?",
+      "answers": ["ja", "nej"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Kan du arbejde hjemmefra?",
+      "answers": ["ja", "nej"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Bli' hjemme.",
+      "explanation": "Du  har ikke nogen grund til at gå ud for tiden. Hvis du går ud alligevel, bringer du dig selv og andre i fare. Vær sød og bli' hjemme."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Du må endlig gå ud!",
+      "explanation": " Hvad du gør er nødvendigt for samfundet og vi er taknemmelig. Godt gået!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Det skulle være bedre hvis du blev hjemme.",
+      "explanation": "Din chef skulle lade dig gøre din arbejde hjemmefra. Du bringer dig selv og andre i fare når du ta'r på arbejde. Hvis du beslutter dig for at gå hold afstand til andre, mindst 1,5 meter."
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Du kan forsigtigt gå udenfor.",
+      "explanation": " Ta'r dig af din syge ven. Gå alene og hold mindst 1,5 meter afstand til andre. Vær forsigtigt og sørg at du ikke bliver syg selv."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Du kan forsigtigt gå udenfor.",
+      "explanation": "Gå udenfor og gør hvad du skal gøre. Gå alene og hold mindst 1,5 meter afstand til andre. Hvis andre kommer for tæt på kan du sige det og bege dem at holde afstand. Så beskytter du dig selv og andre."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Du kan forsigtigt gå udenfor.",
+      "explanation": "Du kan gå ud men sørg at du holder mindst 1,5 meter afstand til andre. Hvis andre kommer for tæt på kan du sige det og bege dem at holde afstand. Så beskytter du dig selv og andre."
+    }
+  }
+}

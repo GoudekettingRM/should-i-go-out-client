@@ -5,6 +5,10 @@ import messages_pt from "./pt.json";
 import messages_de from "./de.json";
 import messages_at from "./at.json";
 import messages_ro from "./ro.json";
+import messages_nb from "./nb.json";
+import messages_da from "./da.json";
+// import messages_it from "./it.json"
+
 import {
   english,
   dutch,
@@ -12,7 +16,10 @@ import {
   portuguese,
   german,
   austrian,
-  romanian
+  romanian,
+  norwegian,
+  danish
+  // italian
 } from "./letterCodes";
 
 export const messages: any = {
@@ -22,5 +29,8 @@ export const messages: any = {
   [portuguese]: messages_pt,
   [german]: messages_de,
   [austrian]: messages_at,
-  [romanian]: messages_ro
+  [romanian]: messages_ro,
+  [norwegian]: messages_nb,
+  [danish]: messages_da
+  //[italian]: messages_it
 };

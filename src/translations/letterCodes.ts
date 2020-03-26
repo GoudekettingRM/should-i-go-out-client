@@ -6,4 +6,5 @@ export const german: string = "de-DE";
 export const austrian: string = "de-AT";
 export const romanian: string = "ro";
 export const italian: string = "it";
-export const norwegian: string = "no";
+export const norwegian: string = "nb";
+export const danish: string = "da";
