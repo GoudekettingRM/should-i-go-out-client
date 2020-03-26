@@ -1,13 +1,13 @@
-import messages_en from "./en.json";
-import messages_nl from "./nl.json";
-import messages_es from "./es.json";
-import messages_pt from "./pt.json";
-import messages_de from "./de.json";
-import messages_at from "./at.json";
-import messages_ro from "./ro.json";
-import messages_nb from "./nb.json";
-import messages_da from "./da.json";
-// import messages_it from "./it.json"
+import messages_en from "./languageFiles/en.json";
+import messages_nl from "./languageFiles/nl.json";
+import messages_es from "./languageFiles/es.json";
+import messages_pt from "./languageFiles/pt.json";
+import messages_de from "./languageFiles/de.json";
+import messages_at from "./languageFiles/at.json";
+import messages_ro from "./languageFiles/ro.json";
+import messages_nb from "./languageFiles/nb.json";
+import messages_da from "./languageFiles/da.json";
+// import messages_it from "./languageFiles/it.json"
 
 import {
   english,

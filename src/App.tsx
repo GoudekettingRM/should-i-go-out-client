@@ -16,7 +16,6 @@ import {
 import { english } from "./translations/letterCodes";
 import { Answers } from "./types/answer";
 import { Question } from "./types/question";
-import ChangeLanguage from "./images/changeLanguage.svg";
 
 import "./App.css";
 
