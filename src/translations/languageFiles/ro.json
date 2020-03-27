@@ -5,8 +5,8 @@
   "app.retryButton": "Încearcă din nou",
   "app.redirectToHome": "Înapoi la prima pagină...",
   "app.noAnswerError": "Trebuie să alegi una dintre opțiuni",
-  "app.shareText": "",
-  "app.shareTitle": "",
+  "app.shareText": "Deci vrei să ieși din casă în timpul crizei coronavirus? Înainte să ieși, verifică aici!",
+  "app.shareTitle": "Răspândește vestea, nu virusul",
   "questions": [
     {
       "questionNumber": 1,
