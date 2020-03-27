@@ -12,11 +12,13 @@ import {
 } from "react-share";
 
 interface ShareButtonsProps {
+  language: string;
   intl: IntlShape;
 }
 
 const ShareButtons: React.FC<ShareButtonsProps> = props => {
-  const url: string = "http://www.should-i-go-out.com/";
+  const { language } = props;
+  const url: string = `http://www.should-i-go-out.com/?${language}`;
 
   return (
     <div>
