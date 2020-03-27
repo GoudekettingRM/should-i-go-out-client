@@ -96,7 +96,9 @@ const App: React.FC<Props> = props => {
             <Route path="/test" exact component={Test} />
             <Route path="/answer" exact component={AnswerContainer} />
           </Switch>
-          <ShareButtons />
+          <footer className="footer">
+            <ShareButtons />
+          </footer>
         </div>
       </div>
     </IntlProvider>

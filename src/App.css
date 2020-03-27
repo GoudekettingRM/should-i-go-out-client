@@ -16,8 +16,19 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+main {
+  flex: 1 0 auto;
+}
+footer {
+  padding-bottom: 1rem;
+}
+.bufferTop {
+  height: 10vh;
+}
 .pageContent {
   width: 500px;
+}
+.background {
   background-color: rgba(233, 233, 233, 0.5);
   padding: 2rem;
   border-radius: 1rem;

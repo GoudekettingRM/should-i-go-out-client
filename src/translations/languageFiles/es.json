@@ -1,56 +1,56 @@
 {
   "app.title": "Bienvenido a Should-I-Go-Out?",
-  "app.startButton": "Quiero salir, pero deberia?",
+  "app.startButton": "¿Quiero salir, pero debería?",
   "app.nextQuestionButton": "Siguiente",
-  "app.retryButton": "Reintentar",
+  "app.retryButton": "Re intentar",
   "app.redirectToHome": "Volver al inicio...",
   "app.noAnswerError": "Debe elegir una de las opciones",
-  "app.shareText": "",
-  "app.shareTitle": "",
+  "app.shareText": "¡¿Así que planeas salir durante la Corona-crisis? Contesta estas preguntas antes de salir!",
+  "app.shareTitle": "Esparce información, no el virus",
   "questions": [
     {
       "questionNumber": 1,
-      "question": "Sales a trabajar?",
+      "question": "¿Sales a trabajar?",
       "answers": ["si", "no"]
     },
     {
       "questionNumber": 2,
-      "question": "Sales a hacer compras?",
+      "question": "¿Sales a hacer compras?",
       "answers": ["si", "no"]
     },
     {
       "questionNumber": 3,
-      "question": "Sales a la farmacia?",
+      "question": "¿Sales a la farmacia?",
       "answers": ["si", "no"]
     },
     {
       "questionNumber": 4,
-      "question": "Sales a tomar un poco de aire?",
+      "question": "¿Sales a tomar un poco de aire?",
       "answers": ["si", "no"]
     },
     {
       "questionNumber": 5,
-      "question": "Sales solo o solamente con las personas con las cuales vives?",
-      "answers": ["si, solo o con las personas que vivo", "no, con mas gente"]
+      "question": "¿Sales solo o solamente con las personas con las cuales vives?",
+      "answers": ["si, solo o con las personas que vivo", "no, con más gente"]
     },
     {
       "questionNumber": 6,
-      "question": "Sales a ayudar a una persona que se encuentra enferma?",
+      "question": "¿Sales a ayudar a una persona que se encuentra enferma?",
       "answers": ["si", "no"]
     },
     {
       "questionNumber": 7,
-      "question": "Sea lo que sea que sales a hacer, puede esperar?",
+      "question": "¿Sea lo que sea que sales a hacer, puede esperar?",
       "answers": ["si", "no"]
     },
     {
       "questionNumber": 8,
-      "question": "Es tu trabajo vital para la sociedad?",
+      "question": "¿Es tu trabajo vital para la sociedad?",
       "answers": ["si", "no"]
     },
     {
       "questionNumber": 9,
-      "question": "Trabajar desde casa es una posibilidad para usted?",
+      "question": "¿Trabajar desde casa es una posibilidad para usted?",
       "answers": ["si", "no"]
     }
   ],
@@ -58,17 +58,17 @@
     "stayIn": {
       "id": 1,
       "conclusion": "Quedate en tu casa.",
-      "explanation": "No parece que tengas una razon valida para salir en este momento. Saliendo de igual manera estas poniendo a ti mismo y a otros en riesgo. Por favor considera no salir."
+      "explanation": "No parece que tengas una razón valida para salir en este momento. Saliendo de igual manera estas poniendo a ti mismo y a otros en riesgo. Por favor considera no salir."
     },
     "youHero": {
       "id": 2,
-      "conclusion": "Si, DEFINITIVAMENTE deberias salir!",
-      "explanation": "Lo que estas haciendo es vital para el funcionamiento de la sociedad y te lo agradecemos mucho!"
+      "conclusion": "¡Si, DEFINITIVAMENTE deberías salir!",
+      "explanation": "¡Lo que estas haciendo es vital para el funcionamiento de la sociedad y te lo agradecemos mucho!"
     },
     "youShouldKnowBetter": {
       "id": 3,
       "conclusion": "Es mejor que no salgas.",
-      "explanation": "Your boss should allow you to work from home. By going to work anyway, you endanger not only yourself, but also others. If you do decide to go, keep your distance to other people, at least 1.5 meters."
+      "explanation": "Tu jefe debería permitirte trabajar desde casa. Al ir a trabajar estas poniendo en riesgo tanto a ti como a los demás. Si decides ir, mantén una distancia de al menos 1.5 metros con los demás."
     },
     "caretaker": {
       "id": 4,
@@ -78,12 +78,12 @@
     "goAlone": {
       "id": 5,
       "conclusion": "Puedes salir con cuidado.",
-      "explanation": "Puedes salir momentaneamente a hacer lo que necesites. Sal por tu cuenta y manten 1.5m de distancia con el resto de las peronas. Si otras personas se acercan mucho, diles que mantengan su distancia. Haciendo esto estaras cuidando de ti y de ellos tambien."
+      "explanation": "Puedes salir momentáneamente a hacer lo que necesites. Sal por tu cuenta y mantén 1.5m de distancia con el resto de las personas. Si otras personas se acercan mucho, diles que mantengan su distancia. Haciendo esto estarás cuidando de ti y de ellos también."
     },
     "avoidOthers": {
       "id": 6,
       "conclusion": "Puedes salir con cuidado.",
-      "explanation": "Puedes salir momentaneamente. Manten 1.5m de distancia con el resto de las peronas. Si otras personas se acercan mucho, diles que mantengan su distancia. Haciendo esto estaras cuidando de ti y de ellos tambien."
+      "explanation": "Puedes salir momentáneamente. Mantén 1.5m de distancia con el resto de las personas. Si otras personas se acercan mucho, diles que mantengan su distancia. Haciendo esto estarás cuidando de ti y de ellos también. "
     }
   }
 }

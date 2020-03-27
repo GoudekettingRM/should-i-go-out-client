@@ -32,13 +32,16 @@ const AnswerContainer: React.FC<Props> = ({
   }
 
   return (
-    <div className="pageContent">
-      <h3>{answer.conclusion}</h3>
-      <p>{answer.explanation}</p>
-      <Button onClick={restartTest}>
-        <FormattedMessage id="app.retryButton" />
-      </Button>
-    </div>
+    <main className="pageContent">
+      <div className="bufferTop"></div>
+      <div className="background">
+        <h3>{answer.conclusion}</h3>
+        <p>{answer.explanation}</p>
+        <Button onClick={restartTest}>
+          <FormattedMessage id="app.retryButton" />
+        </Button>
+      </div>
+    </main>
   );
 };
 
