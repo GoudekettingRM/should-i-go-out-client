@@ -17,7 +17,6 @@ import {
 } from "./translations/languageButtons";
 import { Answers } from "./types/answer";
 import { Question } from "./types/question";
-import ShareButtons from "./components/Sharing/ShareButtons";
 import { useQuery } from "./helper-files/useQuery";
 import "./App.css";
 
