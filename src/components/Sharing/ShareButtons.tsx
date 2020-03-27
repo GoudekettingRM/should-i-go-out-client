@@ -5,7 +5,9 @@ import {
   FacebookShareButton,
   FacebookIcon,
   TwitterShareButton,
-  TwitterIcon
+  TwitterIcon,
+  TelegramShareButton,
+  TelegramIcon
 } from "react-share";
 import { FormattedMessage, injectIntl, IntlShape } from "react-intl";
 
@@ -14,6 +16,8 @@ interface ShareButtonsProps {
 }
 
 const ShareButtons: React.FC<ShareButtonsProps> = props => {
+  const url: string = "http://www.should-i-go-out.com/";
+
   return (
     <div>
       <div>
@@ -26,7 +30,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = props => {
       </div>
       <div>
         <WhatsappShareButton
-          url={"http://www.should-i-go-out.com/"}
+          url={url}
           title={props.intl.formatMessage({
             id: "app.shareText",
             defaultMessage:
@@ -35,7 +39,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = props => {
           <WhatsappIcon className="shareIcon" size={40} round />
         </WhatsappShareButton>
         <FacebookShareButton
-          url={"http://www.should-i-go-out.com/"}
+          url={url}
           quote={props.intl.formatMessage({
             id: "app.shareText",
             defaultMessage:
@@ -44,7 +48,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = props => {
           <FacebookIcon className="shareIcon" size={40} round />
         </FacebookShareButton>
         <TwitterShareButton
-          url={"http://www.should-i-go-out.com/"}
+          url={url}
           title={props.intl.formatMessage({
             id: "app.shareText",
             defaultMessage:
@@ -52,6 +56,15 @@ const ShareButtons: React.FC<ShareButtonsProps> = props => {
           })}>
           <TwitterIcon className="shareIcon" size={40} round />
         </TwitterShareButton>
+        <TelegramShareButton
+          url={url}
+          title={props.intl.formatMessage({
+            id: "app.shareText",
+            defaultMessage:
+              "So you want to go outside during the Corona-crisis? Check this first before you go out!"
+          })}>
+          <TelegramIcon className="shareIcon" size={40} round />
+        </TelegramShareButton>
       </div>
     </div>
   );
