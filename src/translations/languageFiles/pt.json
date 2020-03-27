@@ -5,6 +5,8 @@
   "app.retryButton": "Tentar outra vez",
   "app.redirectToHome": "Voltar ao início...",
   "app.noAnswerError": "Tens que escolher uma das opções",
+  "app.shareText": "Queres sair de casa durante a crise do Coronavírus? Faz este quiz antes de sair!",
+  "app.shareTitle": "Espalha a palavra, não o vírus",
   "questions": [
     {
       "questionNumber": 1,

@@ -10,14 +10,25 @@ body {
   height: 90vh;
 }
 .content {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  padding-bottom: 1rem;
+}
+.bufferTop {
+  height: 7vh;
 }
 .pageContent {
   width: 500px;
+}
+.background {
   background-color: rgba(233, 233, 233, 0.5);
   padding: 2rem;
   border-radius: 1rem;
@@ -41,7 +52,11 @@ body {
   margin-right: 5px;
 }
 h1,
+h2,
 h3,
+h4,
+h5,
+h6,
 p,
 .answerLabel {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -116,4 +131,7 @@ nav {
   nav.show {
     background-color: rgb(211, 211, 211, 0.5);
   }
+}
+.shareIcon {
+  margin: 0 10px;
 }

@@ -5,6 +5,8 @@
   "app.retryButton": "Check opnieuw",
   "app.redirectToHome": "Terug naar home...",
   "app.noAnswerError": "Je moet één van de opties kiezen",
+  "app.shareText": "Dus je wilt naar buiten tijdens de corona-crisis? Kijk hiernaar voordat je gaat!",
+  "app.shareTitle": "Deel kennis, geen corona",
   "questions": [
     {
       "questionNumber": 1,

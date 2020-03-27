@@ -5,6 +5,8 @@
   "app.retryButton": "En gang til",
   "app.redirectToHome": "Tilbage til start",
   "app.noAnswerError": "Du må vælge et svar.",
+  "app.shareText": "Du vil gå udenfor under coronakrisen? Tjek lige her før du ta'r udenfor!",
+  "app.shareTitle": "Spred budskabet, ikke virussen",
   "questions": [
     {
       "questionNumber": 1,

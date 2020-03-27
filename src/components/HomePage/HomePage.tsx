@@ -17,14 +17,15 @@ const HomePage: React.FC<Props> = props => {
   };
 
   return (
-    <div className="introScreen">
+    <main className="introScreen">
+      <div className="bufferTop"></div>
       <h1>
         <FormattedMessage id="app.title" />
       </h1>
       <Button type="button" onClick={startTest}>
         <FormattedMessage id="app.startButton" />
       </Button>
-    </div>
+    </main>
   );
 };
 

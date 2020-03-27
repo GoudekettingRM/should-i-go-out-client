@@ -16,7 +16,7 @@ import {
 import { english } from "./translations/letterCodes";
 import { Answers } from "./types/answer";
 import { Question } from "./types/question";
-
+import ShareButtons from "./components/Sharing/ShareButtons";
 import "./App.css";
 
 interface AppProps {}
@@ -96,6 +96,9 @@ const App: React.FC<Props> = props => {
             <Route path="/test" exact component={Test} />
             <Route path="/answer" exact component={AnswerContainer} />
           </Switch>
+          <footer className="footer">
+            <ShareButtons />
+          </footer>
         </div>
       </div>
     </IntlProvider>
