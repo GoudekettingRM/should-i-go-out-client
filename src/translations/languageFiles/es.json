@@ -5,6 +5,8 @@
   "app.retryButton": "Reintentar",
   "app.redirectToHome": "Volver al inicio...",
   "app.noAnswerError": "Debe elegir una de las opciones",
+  "app.shareText": "",
+  "app.shareTitle": "",
   "questions": [
     {
       "questionNumber": 1,

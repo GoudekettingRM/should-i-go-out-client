@@ -5,6 +5,8 @@
   "app.retryButton": "Sjekk igjen",
   "app.redirectToHome": "Tilbake til hjem...",
   "app.noAnswerError": "Velg mellom alternativene",
+  "app.shareText": "",
+  "app.shareTitle": "",
   "questions": [
     {
       "questionNumber": 1,

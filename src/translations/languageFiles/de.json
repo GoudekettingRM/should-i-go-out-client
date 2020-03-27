@@ -5,6 +5,8 @@
   "app.retryButton": "Nochmal probieren",
   "app.redirectToHome": "Zurück zum Start",
   "app.noAnswerError": "Du musst eine Antwort wählen",
+  "app.shareText": "Du willst also während der Corona Krise rausgehen? Informier dich zuerst hier!",
+  "app.shareTitle": "Verbreite die Botschaft, nicht den Virus",
   "questions": [
     {
       "questionNumber": 1,

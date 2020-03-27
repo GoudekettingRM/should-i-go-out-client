@@ -5,6 +5,8 @@
   "app.retryButton": "Încearcă din nou",
   "app.redirectToHome": "Înapoi la prima pagină...",
   "app.noAnswerError": "Trebuie să alegi una dintre opțiuni",
+  "app.shareText": "",
+  "app.shareTitle": "",
   "questions": [
     {
       "questionNumber": 1,

@@ -5,6 +5,8 @@
   "app.retryButton": "No amoi",
   "app.redirectToHome": "Zruck zum Start",
   "app.noAnswerError": "Du musst dir eine Antwort aussuchen",
+  "app.shareText": "Wüst du aussi gehn? Schau da des zuerst an!",
+  "app.shareTitle": "Verbreit die Botschaft, ned den Virus",
   "questions": [
     {
       "questionNumber": 1,
