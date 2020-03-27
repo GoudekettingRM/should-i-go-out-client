@@ -5,8 +5,8 @@
   "app.retryButton": "Sjekk igjen",
   "app.redirectToHome": "Tilbake til hjem...",
   "app.noAnswerError": "Velg mellom alternativene",
-  "app.shareText": "",
-  "app.shareTitle": "",
+  "app.shareText": "Så du har lyst å gå ut i denne Corona krisen? Sjekk ut dette før du går ut!",
+  "app.shareTitle": "Spree ordet, ikke viruset",
   "questions": [
     {
       "questionNumber": 1,
