@@ -13,10 +13,10 @@ import {
   languageButtonsData,
   getCurrentLanguageImage
 } from "./translations/languageButtons";
-import { english } from "./translations/letterCodes";
 import { Answers } from "./types/answer";
 import { Question } from "./types/question";
 import ShareButtons from "./components/Sharing/ShareButtons";
+import { useQuery } from "./helper-files/useQuery";
 import "./App.css";
 
 interface AppProps {}
@@ -25,7 +25,8 @@ type Props = AppProps & LinkDispatchProps;
 
 const App: React.FC<Props> = props => {
   const { setAllQuestions, setAllAnswers } = props;
-  const [language, setLanguage] = useState(english);
+  const startingLanguage = useQuery();
+  const [language, setLanguage] = useState(startingLanguage);
   const [navClass, setNavClass] = useState("");
   const [flagsClass, setFlagsClass] = useState("languageButtons");
 
@@ -97,7 +98,7 @@ const App: React.FC<Props> = props => {
             <Route path="/answer" exact component={AnswerContainer} />
           </Switch>
           <footer className="footer">
-            <ShareButtons />
+            <ShareButtons language={language} />
           </footer>
         </div>
       </div>
