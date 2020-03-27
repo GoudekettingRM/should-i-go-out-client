@@ -5,18 +5,19 @@ import { Route, Switch } from "react-router";
 import { bindActionCreators, Dispatch } from "redux";
 import AnswerContainer from "./components/Answer/Answer";
 import HomePage from "./components/HomePage/HomePage";
+import { FlagButton } from "./components/Languages/FlagButton";
+import ShareButtons from "./components/Sharing/ShareButtons";
 import Test from "./components/Test/Test";
 import { setAllAnswersActionCreator } from "./store/answer/actions";
 import { setAllQuestionsActionCreator } from "./store/questions/actions";
 import { messages } from "./translations/allMessages";
 import {
-  languageButtonsData,
-  getCurrentLanguageImage
+  getCurrentLanguageImage,
+  languageButtonsData
 } from "./translations/languageButtons";
-import { english } from "./translations/letterCodes";
 import { Answers } from "./types/answer";
 import { Question } from "./types/question";
-import ShareButtons from "./components/Sharing/ShareButtons";
+import { useQuery } from "./helper-files/useQuery";
 import "./App.css";
 
 interface AppProps {}
@@ -25,7 +26,8 @@ type Props = AppProps & LinkDispatchProps;
 
 const App: React.FC<Props> = props => {
   const { setAllQuestions, setAllAnswers } = props;
-  const [language, setLanguage] = useState(english);
+  const startingLanguage = useQuery();
+  const [language, setLanguage] = useState(startingLanguage);
   const [navClass, setNavClass] = useState("");
   const [flagsClass, setFlagsClass] = useState("languageButtons");
 
@@ -37,25 +39,6 @@ const App: React.FC<Props> = props => {
     setAllQuestions(messages[language].questions);
     setAllAnswers(messages[language].answers);
   }, [language, setAllAnswers, setAllQuestions]);
-
-  const renderFlagButton = (
-    flagImage: string,
-    letterCode: string,
-    languageFull: string,
-    index: number
-  ) => {
-    return (
-      <div
-        key={index}
-        className="langFlag"
-        onClick={() => {
-          handleChangeLanguage(letterCode);
-          toggleNav();
-        }}>
-        <img src={flagImage} alt={languageFull} title={languageFull} />
-      </div>
-    );
-  };
 
   const toggleNav = () => {
     if (flagsClass === "languageButtons") {
@@ -79,14 +62,14 @@ const App: React.FC<Props> = props => {
           />
           <div className="flagContainer">
             <div className={flagsClass}>
-              {languageButtonsData.map((lang, i) =>
-                renderFlagButton(
-                  lang.image,
-                  lang.letterCode,
-                  lang.languageFull,
-                  i
-                )
-              )}
+              {languageButtonsData.map((lang, i) => (
+                <FlagButton
+                  lang={lang}
+                  key={i}
+                  handleChangeLanguage={handleChangeLanguage}
+                  toggleNav={toggleNav}
+                />
+              ))}
             </div>
           </div>
         </nav>
@@ -97,7 +80,7 @@ const App: React.FC<Props> = props => {
             <Route path="/answer" exact component={AnswerContainer} />
           </Switch>
           <footer className="footer">
-            <ShareButtons />
+            <ShareButtons language={language} />
           </footer>
         </div>
       </div>

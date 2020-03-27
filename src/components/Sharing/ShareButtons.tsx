@@ -1,22 +1,24 @@
 import React from "react";
-import {
-  WhatsappShareButton,
-  WhatsappIcon,
-  FacebookShareButton,
-  FacebookIcon,
-  TwitterShareButton,
-  TwitterIcon,
-  TelegramShareButton,
-  TelegramIcon
-} from "react-share";
 import { FormattedMessage, injectIntl, IntlShape } from "react-intl";
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  TelegramIcon,
+  TelegramShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton
+} from "react-share";
 
 interface ShareButtonsProps {
+  language: string;
   intl: IntlShape;
 }
 
 const ShareButtons: React.FC<ShareButtonsProps> = props => {
-  const url: string = "http://www.should-i-go-out.com/";
+  const { language } = props;
+  const url: string = `http://www.should-i-go-out.com/?${language}`;
 
   return (
     <div>
