@@ -5,6 +5,8 @@
   "app.retryButton": "Check again",
   "app.redirectToHome": "Back to home...",
   "app.noAnswerError": "You have choose one of the options",
+  "app.shareText": "So you want to go outside during the corona crisis? Check this first before you go out!",
+  "app.shareTitle": "Spread the word, not the virus",
   "questions": [
     {
       "questionNumber": 1,

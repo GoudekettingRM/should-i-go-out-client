@@ -48,16 +48,19 @@ const Test: React.FC<Props> = props => {
   };
 
   return (
-    <div className="pageContent">
-      <QuestionComponent
-        history={props.history}
-        key={questionNumber}
-        id={questionNumber}
-        question={question}
-        answers={answers}
-        handleNextQuestion={handleNextQuestion}
-      />
-    </div>
+    <main className="pageContent">
+      <div className="bufferTop"></div>
+      <div className="background">
+        <QuestionComponent
+          history={props.history}
+          key={questionNumber}
+          id={questionNumber}
+          question={question}
+          answers={answers}
+          handleNextQuestion={handleNextQuestion}
+        />
+      </div>
+    </main>
   );
 };
 
