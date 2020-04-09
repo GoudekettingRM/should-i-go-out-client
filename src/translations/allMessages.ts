@@ -8,6 +8,7 @@ import messages_ro from "./languageFiles/ro.json";
 import messages_nb from "./languageFiles/nb.json";
 import messages_da from "./languageFiles/da.json";
 import messages_it from "./languageFiles/it.json";
+import messages_gr from "./languageFiles/gr.json";
 // import messages_hu from "./languageFiles/hu.json";
 
 import {
@@ -22,6 +23,7 @@ import {
   danish,
   italian,
   hungarian,
+  greek,
 } from "./letterCodes";
 
 export const messages: any = {
@@ -35,5 +37,6 @@ export const messages: any = {
   [norwegian]: messages_nb,
   [danish]: messages_da,
   [italian]: messages_it,
+  [greek]: messages_gr,
   // [hungarian]: messages_hu
 };
