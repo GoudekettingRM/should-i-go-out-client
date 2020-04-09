@@ -8,7 +8,7 @@ import AustrianFlag from "../images/flags/at.svg";
 import RomanianFlag from "../images/flags/ro.svg";
 import NorwegianFlag from "../images/flags/nb.svg";
 import DanishFlag from "../images/flags/da.svg";
-// import ItalianFlag from "../images/flags/it.svg";
+import ItalianFlag from "../images/flags/it.svg";
 
 import {
   english,
@@ -19,8 +19,8 @@ import {
   austrian,
   romanian,
   norwegian,
-  danish
-  // italian,
+  danish,
+  italian,
 } from "./letterCodes";
 
 interface LanguageButtonType {
@@ -38,20 +38,19 @@ export const languageButtonsData: LanguageButtonType[] = [
   {
     image: AustrianFlag,
     letterCode: austrian,
-    languageFull: "Austrian German"
+    languageFull: "Austrian German",
   },
   { image: RomanianFlag, letterCode: romanian, languageFull: "Romanian" },
   { image: NorwegianFlag, letterCode: norwegian, languageFull: "Norwegian" },
-  { image: DanishFlag, letterCode: danish, languageFull: "Danish" }
-
-  // { image: ItalianFlag, letterCode: italian, languageFull: "Italian" }
+  { image: DanishFlag, letterCode: danish, languageFull: "Danish" },
+  { image: ItalianFlag, letterCode: italian, languageFull: "Italian" },
 ];
 
 export const getCurrentLanguageImage = (language: string): string => {
   const currentLanguage:
     | LanguageButtonType
     | undefined = languageButtonsData.find(
-    languageData => languageData.letterCode === language
+    (languageData) => languageData.letterCode === language
   );
   if (currentLanguage) {
     return currentLanguage.image;

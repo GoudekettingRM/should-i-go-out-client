@@ -1,0 +1,92 @@
+{
+  "app.title": "Benvenuti a Should-I-Go-Out?",
+  "app.startButton": "Vorrei uscire, ma è davvero la scelta giusta?",
+  "app.nextQuestionButton": "Avanti",
+  "app.retryButton": "Prova di nuovo",
+  "app.redirectToHome": "Torna alla home...",
+  "app.noAnswerError": "Devi scegliere una delle opzioni",
+  "app.shareText": "Stai pensando di uscire nonostante il coronavirus? Dai un'occhiata a questo prima di uscire!",
+  "app.shareTitle": "Spargi l'informazione, non il virus",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Stai andando al lavoro?",
+      "answers": ["sì", "no"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Vai a fare la spesa?",
+      "answers": ["sì", "no"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Stai andando in farmacia?",
+      "answers": ["sì", "no"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Vuoi uscire a prendere un po' d'aria fresca?",
+      "answers": ["sì", "no"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Esci da solo o con persone con cui vivi?",
+      "answers": [
+        "sì, esco da solo o con persone con cui vivo",
+        "no, esco con altri"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Esci per aiutare una persona malata?",
+      "answers": ["sì", "no"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Qualunque cosa tu voglia andare a fare, può aspettare?",
+      "answers": ["sì", "no"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Fai un lavoro di vitale importanza per la società?",
+      "answers": ["sì", "no"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Lavorare da casa è per te un'opzione?",
+      "answers": ["sì", "no"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Stai a casa.",
+      "explanation": "Non hai una motivazione solida per uscire al momento. Se decidessi di uscire ugualmente, metteresti in pericolo te stesso e gli altri. Per favore non farlo."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "Dovresti DECISAMENTE uscire di casa!",
+      "explanation": "Ciò che fai è di vitale importanza per la società, e te ne siamo grati. Continua così!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Sarebbe meglio che non uscissi.",
+      "explanation": "Il tuo capo dovrebbe permetterti di lavorare da casa. Se decidessi di uscire, metteresti in pericolo non solo te stesso, ma anche gli altri. Se decidi di uscire ugualmente, mantieni la distanza di sicurezza dalle persone, pari ad almeno 1,5m (6 piedi)"
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Puoi uscire, ma presta attenzione.",
+      "explanation": "Esci pure a prenderti cura di coloro che vuoi aiutare. Cerca però di andarci da solo, e mantieni sempre una distanza di almeno 1,5m (6 piedi) dalle persone. Soprattutto, prenditi cura di te stesso per non ammalarti, e segui sempre le raccomandazioni igieniche."
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Puoi uscire, ma presta attenzione.",
+      "explanation": "Puoi uscire velocemente per fare ciò che devi. Esci da solo, e mantieni la distanza di 1,5m (6 piedi) dalle persone. Se qualcuno dovesse avvicinarsi troppo, ricordagli di mantenere la distanza. Nel fare ciò, proteggi sia loro sia te stesso."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Puoi uscire, ma presta attenzione.",
+      "explanation": "Puoi uscire velocemente. Mantieni la distanza di 1,5m (6 piedi) dalle persone. Se qualcuno dovesse avvicinarsi troppo, ricordagli di mantenere la distanza. Nel fare ciò, proteggi sia loro sia te stesso."
+    }
+  }
+}
