@@ -9,6 +9,7 @@ import RomanianFlag from "../images/flags/ro.svg";
 import NorwegianFlag from "../images/flags/nb.svg";
 import DanishFlag from "../images/flags/da.svg";
 import ItalianFlag from "../images/flags/it.svg";
+import HungarianFlag from "../images/flags/hu.svg";
 
 import {
   english,
@@ -21,6 +22,7 @@ import {
   norwegian,
   danish,
   italian,
+  hungarian,
 } from "./letterCodes";
 
 interface LanguageButtonType {
@@ -44,6 +46,7 @@ export const languageButtonsData: LanguageButtonType[] = [
   { image: NorwegianFlag, letterCode: norwegian, languageFull: "Norwegian" },
   { image: DanishFlag, letterCode: danish, languageFull: "Danish" },
   { image: ItalianFlag, letterCode: italian, languageFull: "Italian" },
+  // { image: HungarianFlag, letterCode: hungarian, languageFull: "Hungarian"}
 ];
 
 export const getCurrentLanguageImage = (language: string): string => {
