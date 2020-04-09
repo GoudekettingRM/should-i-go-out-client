@@ -7,7 +7,8 @@ export const austrian: string = "de-AT";
 export const romanian: string = "ro";
 export const norwegian: string = "nb";
 export const danish: string = "da";
-// export const italian: string = "it";
+export const italian: string = "it";
+export const hungarian: string = "hu";
 
 export const allLanguages: string[] = [
   english,
@@ -18,5 +19,7 @@ export const allLanguages: string[] = [
   austrian,
   romanian,
   norwegian,
-  danish
+  danish,
+  italian,
+  hungarian,
 ];
