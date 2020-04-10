@@ -9,7 +9,7 @@ import messages_nb from "./languageFiles/nb.json";
 import messages_da from "./languageFiles/da.json";
 import messages_it from "./languageFiles/it.json";
 import messages_gr from "./languageFiles/gr.json";
-// import messages_hu from "./languageFiles/hu.json";
+import messages_hu from "./languageFiles/hu.json";
 
 import {
   english,
@@ -38,5 +38,5 @@ export const messages: any = {
   [danish]: messages_da,
   [italian]: messages_it,
   [greek]: messages_gr,
-  // [hungarian]: messages_hu
+  [hungarian]: messages_hu,
 };

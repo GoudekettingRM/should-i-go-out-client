@@ -49,7 +49,7 @@ export const languageButtonsData: LanguageButtonType[] = [
   { image: DanishFlag, letterCode: danish, languageFull: "Danish" },
   { image: ItalianFlag, letterCode: italian, languageFull: "Italian" },
   { image: GreekFlag, letterCode: greek, languageFull: "Greek" },
-  // { image: HungarianFlag, letterCode: hungarian, languageFull: "Hungarian"}
+  { image: HungarianFlag, letterCode: hungarian, languageFull: "Hungarian" },
 ];
 
 export const getCurrentLanguageImage = (language: string): string => {

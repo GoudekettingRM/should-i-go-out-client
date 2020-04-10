@@ -8,6 +8,7 @@ export const positiveAnswers: PositiveNegativeAnswers = [
   "da",
   "sì",
   "ναι",
+  "igen",
   "yes, by myself or with people I live with",
   "ja, alleen of alleen met mensen die bij je in huis wonen",
   "si, solo o con las personas que vivo",
@@ -19,6 +20,7 @@ export const positiveAnswers: PositiveNegativeAnswers = [
   "ja, allene eller med huskammerater",
   "sì, esco da solo o con persone con cui vivo",
   "ναι, μόνος/η μου ή με άτομο που μένω μαζί του",
+  "igen, egyedül, vagy a velem egy háztartásban élőkkel megyek",
 ];
 
 export const negativeAnswers: string[] = [
@@ -31,6 +33,7 @@ export const negativeAnswers: string[] = [
   "nei",
   "nej",
   "όχι",
+  "nem",
   "no, with others",
   "nee, ook met andere mensen",
   "no, con mas gente",
@@ -42,4 +45,5 @@ export const negativeAnswers: string[] = [
   "nej, med andre mennesker",
   "no, esco con altri",
   "όχι, με κάποιον άλλο",
+  "nem, másokkal megyek",
 ];
