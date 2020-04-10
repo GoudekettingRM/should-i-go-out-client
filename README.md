@@ -11,6 +11,8 @@ This little front-end application is about educating people as well as practicin
 - **[Goals for this project](#goals-for-this-project)**
 - **[Technologies used](#technologies-used)**
 - **[Screenshots](#screenshots-of-the-app)**
+- **[Git usage](#git-usage)**
+- **[Collaborators](#collaborators)**
 - **[create-react-app-docs](#create-react-app)**
 
 ## Goals for this project:
@@ -32,7 +34,35 @@ This little front-end application is about educating people as well as practicin
 
 **[Click here to look at some screenshots of the final app](./screenshots.md)**
 
+## Git Usage
+
+In this project I try to make proper use of git and continuous deployment. For this I have the following branch setup:
+
+```
+master (auto deploys) ______________________
+                       \               /
+development             \_____________/- pull request
+                         \           /
+features                  \_commits_/- pull request
+```
+
 If you have feedback to improve my git usage: **[please drop me a message!](https://www.linkedin.com/in/robinmgoudeketting/)**
+
+## Collaborators
+
+This app makes its information available in many languages and that could not have been possible without the help of these awesome internationals that care about doing good in this world.
+
+| Name (links to LinkedIn)                                              | Helped with translation(s) for | Github profile                                      |
+| --------------------------------------------------------------------- | ------------------------------ | --------------------------------------------------- |
+| [Hanna Lenitz](https://www.linkedin.com/in/johanna-lenitz/)           | German, Austrian, Danish       |                                                     |
+| [Philip Brandner](https://www.linkedin.com/in/philipbrandner/)        | Austrian                       | [pbrandner](https://github.com/pbrandner)           |
+| [Alexandra Marques](https://www.linkedin.com/in/avizm/)               | Portuguese                     | [avizmarques](https://github.com/avizmarques)       |
+| [Matías Garcia](https://www.linkedin.com/in/matias-garcia-79b6aa108/) | Spanish                        | [matiasgarcia91](https://github.com/matiasgarcia91) |
+| [Toralf Kvelland](https://www.linkedin.com/in/toralf-kvelland/)       | Norwegian                      | [torkvell](https://github.com/torkvell)             |
+| [Cristina Rujan](https://www.linkedin.com/in/cristina-rujan/)         | Romanian                       |                                                     |
+| [Irene De Nicolo](https://www.linkedin.com/in/irenedenicolo/)         | Italian                        | [irenedeni](https://github.com/irenedeni)           |
+| [Eszter Szöllősi](https://www.linkedin.com/in/eszterszollosi/)        | Hungarian                      |                                                     |
+| [Maria Taxiarchi](https://www.linkedin.com/in/mtaxiarchi/)            | Greek                          |                                                     |
 
 ## Create React App
 
