@@ -9,6 +9,7 @@ export const norwegian: string = "nb";
 export const danish: string = "da";
 export const italian: string = "it";
 export const hungarian: string = "hu";
+export const greek: string = "gr";
 
 export const allLanguages: string[] = [
   english,
@@ -22,4 +23,5 @@ export const allLanguages: string[] = [
   danish,
   italian,
   hungarian,
+  greek,
 ];

@@ -1,0 +1,94 @@
+{
+  "app.title": "Üdvözöllek a Should-I-Go-Out?-ban",
+
+  "app.startButton": "Szeretnék kimenni, de bölcs dolog most ezt tenni?",
+
+  "app.nextQuestionButton": "Következő",
+  "app.retryButton": "Újra",
+  "app.redirectToHome": "Vissza a főoldalra...",
+  "app.noAnswerError": "Válassz a lehetőségek közül",
+  "app.shareText": "Szóval ki akarsz menni a koronavírus idején? Mielőtt kimész, ellenőrizd itt először, hogy biztos mehetsz-e!",
+  "app.shareTitle": "Vidd a hírt, ne a vírust!",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Munkába mész?",
+      "answers": ["igen", "nem"]
+    },
+    {
+      "questionNumber": 2,
+      "question": "Élelmiszert mész venni?",
+      "answers": ["igen", "nem"]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Gyógyszertárba mész?",
+      "answers": ["igen", "nem"]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Csak levegőzni mész?",
+      "answers": ["igen", "nem"]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Egyedül mész, vagy a veled együtt lakókkal?",
+      "answers": [
+        "igen, egyedül, vagy a velem egy háztartásban élőkkel megyek",
+        "nem, másokkal megyek"
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Betegnek mész segítséget nyújtani?",
+      "answers": ["igen", "nem"]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Amit szeretnél csinálni/elintézni, az várhat?",
+      "answers": ["igen", "nem"]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Olyan munkát végzel ami elengedhetetlen a társadalom számára?",
+      "answers": ["igen", "nem"]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Van lehetőséged otthonról dolgozni?",
+      "answers": ["igen", "nem"]
+    }
+  ],
+  "answers": {
+    "stayIn": {
+      "id": 1,
+      "conclusion": "Maradj otthon.",
+      "explanation": "Jelenleg nincs megalapozott oka a kimenetelednek. Ha kimész, veszélybe sodorhatod magad és másokat. Kérlek maradj otthon."
+    },
+    "youHero": {
+      "id": 2,
+      "conclusion": "MINDENKÉPPEN menj ki",
+      "explanation": "Amit csinálsz, az létfontosságú a társadalom számára, köszönjük! Csak így tovább!"
+    },
+    "youShouldKnowBetter": {
+      "id": 3,
+      "conclusion": "Jobb, ha nem mész ki!",
+      "explanation": "A főnöködnek lehetővé kellene tennie hogy otthonról tudj dolgozni. Ha mégis elmész munkába, nem csak magadat, de másokat is veszélyeztethetsz. Ha úgy döntesz, kimész, fokozottan figyelj a másfél méteres távolság megtartására!"
+    },
+    "caretaker": {
+      "id": 4,
+      "conclusion": "Óvatosan kimehetsz.",
+      "explanation": "Menj és gondoskodj a személyről aki ezt igényli. Menj egyedül es mindenkitől tarts másfél méteres távolságot. Mindenekelőtt, ügyelj arra, hogy te ne betegedj meg, azzal, hogy betartod a higiéniai eloirasokat!"
+    },
+    "goAlone": {
+      "id": 5,
+      "conclusion": "Óvatosan kimehetsz.",
+      "explanation": "Rövid időre kimehetsz, hogy elintézd azt, ami nem várhat. Menj egyedül és mindenkitől tarts másfél méteres távolságot. Ha mások túl közel jönnek hozzád, figyelmeztesd őket is a másfél méteres távolság tartására. Ezzel nem csak magadat, de másokat is megvédesz a fertőzésveszélytől."
+    },
+    "avoidOthers": {
+      "id": 6,
+      "conclusion": "Óvatosan kimehetsz.",
+      "explanation": "Rövid időre kimehetsz, hogy elintézd azt, ami nem várhat. Menj egyedül és mindenkitől tarts másfél méteres távolságot. Ha mások túl közel jönnek hozzád, figyelmeztesd őket is a másfél méteres távolság tartására. Ezzel nem csak magadat, de másokat is megvédesz a fertőzésveszélytől."
+    }
+  }
+}
