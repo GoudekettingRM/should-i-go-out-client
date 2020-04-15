@@ -10,7 +10,7 @@ This little front-end application is about educating people as well as practicin
 
 - **[Goals for this project](#goals-for-this-project)**
 - **[Technologies used](#technologies-used)**
-- **[Screenshots](#screenshots-of-the-app)**
+- **[Screenshots](#screenshots)**
 - **[Git usage](#git-usage)**
 - **[Collaborators](#collaborators)**
 - **[create-react-app-docs](#create-react-app)**
@@ -30,7 +30,9 @@ This little front-end application is about educating people as well as practicin
 - **[Redux Types](./src/store/questions/types.ts)**
 - **[React-intl](./src/App.tsx)**
 
-## Screenshots of the app
+## Screenshot
+
+<img src="https://res.cloudinary.com/robin-random-files/image/upload/v1586945943/should-i-go-out_1_bh9fts.gif" alt="animated gif of the app in action" title="should I go out app in action" />
 
 **[Click here to look at some screenshots of the final app](./screenshots.md)**
 
